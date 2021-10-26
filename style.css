@@ -1,0 +1,33 @@
+@font-face{
+	font-family:Migra;
+	src:url(drukWideBold.ttf);}
+
+body {
+	background-color:black;}
+
+p {
+	font-family:Migra;
+	text-align:left;
+	font-size:60px;
+	border-style: none none solid none;
+	border-width:thick;
+	margin:0px;}
+
+a {text-decoration:none;color:white;}
+
+span {
+	float:right;
+	font-size:30px;
+	top:30px;
+	position:relative;}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;}
+::-webkit-scrollbar-track {
+	background: #000;}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: #eee;}
+::-webkit-scrollbar-thumb:hover {
+	background: #eee;}
