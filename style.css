@@ -1,0 +1,90 @@
+@font-face{
+	font-family: splatoon;
+	src: url(reso/Splatoon1.otf);
+}
+
+body{
+	background-color: black;
+	background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(reso/repBg.png);
+	background-size: 250px;
+	background-repeat: repeat;
+	text-align: center;
+	font-family: splatoon;
+	color: aliceblue;
+}
+
+span.d{
+	color:rgb(173, 117, 236)
+}
+
+table{
+	margin: auto;
+	color: #84db84;
+	font-size: 19px;
+	position:relative;
+	top: -70px;
+}
+
+marquee{
+	position:relative;
+	top: -35px;
+	background-color: rgba(60, 60, 60, 0.5);
+}
+
+td{
+	padding: 0px;
+	width: 1000px;
+	border-radius: 25px;
+}
+
+a{
+	color:#f0629d;
+	text-decoration: none;
+}
+
+a:hover{
+	color:#f08cb6;
+}
+
+td.b{
+	color:#f0629d;
+	background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(reso/splatBg.png);
+	background-size: 100% 150%;
+}
+
+td.c{
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(reso/reBgInk.png);  
+	background-size: auto 100%;
+}
+
+td:not(.a){
+	border: solid;
+}
+
+td:not(.a, .c, .b){
+	background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(reso/reBgStr.png);
+	background-size: 50px 100%;
+}
+
+div.a{
+	font-size: 60px;
+	position: relative;
+	top: -20px;
+}
+
+marquee{
+	font-size: 20px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: #1a1a1a;}
