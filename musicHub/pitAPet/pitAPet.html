@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pit-a-Pet | Yukika</title>
+		<link rel="icon" type="image/jpeg" href="pitAPetAlbum.jpg"/>
+		<style>
+			@font-face{
+			font-family:Migra;
+			src:url(../../drukWideBold.ttf);}
+
+			@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to{transform: rotate(360deg);}}
+
+			body {
+			background-color:#8c4caa;}
+
+			p.a {
+			margin:auto;
+			background:#6c2c8a;
+			width:400px;
+			height:400px;
+			padding:20px;
+			border-radius:50%;}
+
+			p.a #album {
+			z-index:1;
+			position:relative;
+			animation: rotation 40s infinite linear;}
+
+			::-webkit-scrollbar {
+			width: 10px;
+			height: 10px;}
+			::-webkit-scrollbar-track {
+			background: #8c4caa;}
+			::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background: #6c2c8a;}
+			::-webkit-scrollbar-thumb:hover {
+			background: #6c2c8a;}
+		</style>
+	</head>
+	<body>
+		<p style="text-align:center;font-family:Migra;font-size:65px;color:#160029;margin:0px;">PIT-A-PET
+		<span style="font-family:Migra;font-size:35px;color:#160029;margin:0px;">YUKIKA<span></p>
+
+		<p class="a"><img id="album" src="pitAPetAlbum.jpg" height="400" style="border-radius:50%;text-align:center;"></p>
+
+		<p class="b" style="text-align:center;margin:10px;">
+		<audio controls loop>
+			<source src="pitAPet.mp3" type="audio/mpeg">
+		</audio>
+		</p>
+		<a href="../../index.html" style="text-decoration:none;">
+		<p style="text-align:center;font-family:Migra;font-size:35px;color:#160029;margin:0px;">BACK TO HUB</p></a>
+	</body>
+</html>
