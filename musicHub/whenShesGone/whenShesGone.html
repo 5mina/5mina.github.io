@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>When She's Gone | Josh Fudge</title>
+		<link rel="icon" type="image/jpeg" href="whenShesGoneAlbum.jpg"/>
+		<style>
+			@font-face{
+			font-family:Migra;
+			src:url(../../drukWideBold.ttf);}
+
+			@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to{transform: rotate(360deg);}}
+
+			body {
+			background-color:#3b6bc0;}
+
+			p.a {
+			margin:auto;
+			background:#2758b1;
+			width:400px;
+			height:400px;
+			padding:20px;
+			border-radius:50%;}
+
+			p.a #album {
+			z-index:1;
+			position:relative;
+			animation: rotation 40s infinite linear;}
+
+			::-webkit-scrollbar {
+			width: 10px;
+			height: 10px;}
+			::-webkit-scrollbar-track {
+			background: #3b6bc0;}
+			::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background: #2758b1;}
+			::-webkit-scrollbar-thumb:hover {
+			background: #2758b1;}
+		</style>
+	</head>
+	<body>
+		<p style="text-align:center;font-family:Migra;font-size:65px;color:#cce18d;margin:0px;">WHEN SHE'S GONE
+		<span style="font-family:Migra;font-size:35px;color:#cce18d;margin:0px;">JOSH FUDGE<span></p>
+
+		<p class="a"><img id="album" src="whenShesGoneAlbum.jpg" height="400" style="border-radius:50%;text-align:center;"></p>
+
+		<p class="b" style="text-align:center;margin:10px;">
+		<audio controls loop>
+			<source src="whenShesGone.mp3" type="audio/mpeg">
+		</audio>
+		</p>
+		<a href="../../musicList.html" style="text-decoration:none;">
+		<p style="text-align:center;font-family:Migra;font-size:35px;color:#cce18d;margin:0px;">BACK TO HUB</p></a>
+	</body>
+</html>
