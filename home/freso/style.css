@@ -105,7 +105,9 @@ div.pfp{
 
 div.pfp:hover{
     border-radius: 5px;
-    transition: border-radius 1ss ease;
+    transition-property: width, height, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 div.pfp img.pfpp{
@@ -118,7 +120,9 @@ div.pfp img.pfpp{
 
 div.pfp img.pfpp:hover{
     opacity: 0.8;
-    transition: opacity 1s ease;
+    transition-property: opacity, width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 div.hdct{
