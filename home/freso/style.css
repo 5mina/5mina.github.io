@@ -60,11 +60,12 @@ html:not([data-scroll='0']) div.pfp{
     transition-property: width, height;
     transition-duration: 1s;
     transition-timing-function: ease;
+    transition-delay: 0.2s;
 }
 
 html:not([data-scroll='0']) div.pfp img.pfpp{
     width: 90px;
-    transition: width 1s ease;
+    transition: width 1s ease 0.2s;
 }
 
 html:not([data-scroll='0']) div.hdlk{
@@ -73,11 +74,12 @@ html:not([data-scroll='0']) div.hdlk{
     transition-property: margin, font-size;
     transition-duration: 1s;
     transition-timing-function: ease;
+    transition-delay: 0.2s;
 }
 
 html:not([data-scroll='0']) div.hdpd{
     height: 144px;
-    transition: height 1s ease;
+    transition: height 1s ease 0.2s;
 }
 
 div.head{
@@ -101,6 +103,7 @@ div.pfp{
     transition-property: width, height, border-radius;
     transition-duration: 1s;
     transition-timing-function: ease;
+    transition-delay: 0.2s;
 }
 
 div.pfp:hover{
@@ -114,6 +117,7 @@ div.pfp img.pfpp{
     transition-property: opacity, width;
     transition-duration: 1s;
     transition-timing-function: ease;
+    transition-delay: 0.2s;
 }
 
 div.pfp img.pfpp:hover{
@@ -146,6 +150,7 @@ div.hdlk{
     transition-property: margin, font-size;
     transition-duration: 1s;
     transition-timing-function: ease;
+    transition-delay: 0.2s;
 }
 
 div.hdlk table{
@@ -174,7 +179,7 @@ div.hdlk td:not(td:last-child){
 
 div.hdpd{
     height: 229px;
-    transition: height 1s ease;
+    transition: height 1s ease 0.2s;
 }
 
 /* body */
