@@ -7,9 +7,14 @@ div.img{
     margin-right: auto;
 }
 
+div.img img{
+    opacity: 1.0;
+    transition: opacity 1s;
+}
+
 div.img img:hover{
-    animation: hovimg 0.5s ease;
-    animation-fill-mode: forwards;
+    opacity: 0.5;
+    transition: opacity 1s;
 }
 
 @keyframes hovimg{
