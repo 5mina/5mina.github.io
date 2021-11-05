@@ -75,6 +75,11 @@ html:not([data-scroll='0']) div.hdlk{
     transition-timing-function: ease;
 }
 
+html:not([data-scroll='0']) div.hdpd{
+    height: 144px;
+    transition: height 1s ease;
+}
+
 div.head{
     text-align: left;
     padding: 20px;
@@ -169,6 +174,7 @@ div.hdlk td:not(td:last-child){
 
 div.hdpd{
     height: 229px;
+    transition: height 1s ease;
 }
 
 /* body */
