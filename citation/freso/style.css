@@ -118,7 +118,7 @@ html:not([data-scroll='0']) div.hdct{
 }
 
 html:not([data-scroll='0']) div.hdct span.tab{
-    margin-left: 282px;
+    margin-left: 301.6px;
     transition-property: margin;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -229,6 +229,10 @@ div.hdlk td{
     border-color: inherit;
     color: rgb(87, 87, 87);
     transition: background-color 0.2s ease;
+}
+
+div.hdlk td.a{
+    background-color: #d8d8d8;
 }
 
 div.hdlk td:hover{
