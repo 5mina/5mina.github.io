@@ -30,7 +30,7 @@ a{
     display: inline-block;
     margin-left: 40px;
     transition-property: margin;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -63,7 +63,7 @@ html:not([data-scroll='0']) div.head{
     border-bottom-width: 5px;
     border-color: rgb(190, 190, 190);
     transition-property: padding, width, border-width, border-color;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -72,7 +72,7 @@ html:not([data-scroll='0']) div.pfp{
     height: 90px;
     border-radius: 50%;
     transition-property: width, height, border-radius;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -80,7 +80,7 @@ html:not([data-scroll='0']) div.pfp img.pfpp{
     width: 90px;
     opacity: 1.0;
     transition-property: opacity, width;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -89,7 +89,7 @@ html:not([data-scroll='0']) div.pfp:hover{
     height: 90px;
     border-radius: 5px;
     transition-property: width, height, border-radius;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -98,7 +98,7 @@ html:not([data-scroll='0']) div.pfp img.pfpp:hover{
     width: 90px;
     opacity: 0.7;
     transition-property: opacity, width;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -106,32 +106,32 @@ html:not([data-scroll='0']) div.hdlk{
     margin-top: 22px;
     font-size: 15px;
     transition-property: margin, font-size;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
 html:not([data-scroll='0']) div.hdct{
     margin-left: 10px;
     transition-property: margin;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
 html:not([data-scroll='0']) div.hdct span.tab{
     margin-left: 283.25px;
     transition-property: margin;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
 html:not([data-scroll='0']) div.hdct span.b{
     font-size: 13px;
-    transition: font-size 1s ease;
+    transition: font-size 0.8s ease;
 }
 
 html:not([data-scroll='0']) div.hdct span.h{
     font-size: 23px;
-    transition: font-size 1s ease;
+    transition: font-size 0.8s ease;
 }
 
 div.head{
@@ -148,7 +148,7 @@ div.head{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     transition-property: padding, width, border-width, border-color;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -159,7 +159,7 @@ div.pfp{
     overflow: hidden;
     display: inline-block;
     transition-property: width, height, border-radius;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -167,7 +167,7 @@ div.pfp:hover{
     content: attr(title);
     border-radius: 5px;
     transition-property: width, height, border-radius;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -175,14 +175,14 @@ div.pfp img.pfpp{
     width: 180px;
     opacity: 1.0;
     transition-property: opacity, width;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
 div.pfp img.pfpp:hover{
     opacity: 0.7;
     transition-property: opacity, width;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
@@ -192,20 +192,20 @@ div.hdct{
     margin-left: 20px;
     vertical-align: top;
     transition-property: margin;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
 div.hdct span.h{
     font-size: 30px;
     color: black;
-    transition: font-size 1s ease;
+    transition: font-size 0.8s ease;
 }
 
 div.hdct span.b{
     font-size: 20px;
     color: rgb(87, 87, 87);
-    transition: font-size 1s ease;
+    transition: font-size 0.8s ease;
 }
 
 div.hdlk{
@@ -214,7 +214,7 @@ div.hdlk{
     left: -10px;
     font-size: 20px;
     transition-property: margin, font-size;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 
