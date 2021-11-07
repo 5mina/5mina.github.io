@@ -320,8 +320,10 @@ div.version{
     left: 78.5%;
     color: #3d3d3d;
     padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-radius: 5px;
-    background-color: #d3d3d3;
+    background-color: #c4c4c4;
     outline: none;
     border: none;
     cursor: pointer;
@@ -332,7 +334,7 @@ div.version{
 
 html:not([data-scroll='0']) #myBtn{
     top: 95%;
-    background-color: #d3d3d3;
+    background-color: #c4c4c4;
     transition-property: top, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -340,7 +342,7 @@ html:not([data-scroll='0']) #myBtn{
 
 #myBtn:hover{
     top: 100%;
-    background-color: #eee;
+    background-color: #dadada;
     transition-property: top, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -348,7 +350,7 @@ html:not([data-scroll='0']) #myBtn{
 
 html:not([data-scroll='0']) #myBtn:hover{
     top: 95%;
-    background-color: #eee;
+    background-color: #dadada;
     transition-property: top, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
