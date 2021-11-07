@@ -1,5 +1,12 @@
 /* initializers */
 
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen{
+  html {
+        scroll-behavior: smooth;
+    }
+}
+
 body {    
     margin: 0px !important;
     padding-top: 0px !important;
@@ -257,7 +264,7 @@ div.pher{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
-    min-height: 450px;
+    min-height: 550px;
 }
 
 /* footer */
@@ -286,10 +293,12 @@ div.footer a{
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
+    transition: color 0.2s ease;
 }
 
 div.footer a:hover{
     color: #929292;
+    transition: color 0.2s ease;
 }
 
 div.footer td span.tab{
@@ -299,7 +308,48 @@ div.footer td span.tab{
 div.version{
     position: fixed;
     z-index: 10;
-    top: 97%;
-    left: 96%;
+    top: 96.5%;
+    left: 95%;
     color: #c2c2c2;
+}
+
+#myBtn{
+    position: fixed;
+    z-index: 10;
+    top: 100%;
+    left: 78.5%;
+    color: #3d3d3d;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition-property: top, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) #myBtn{
+    top: 95%;
+    background-color: #d3d3d3;
+    transition-property: top, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#myBtn:hover{
+    top: 100%;
+    background-color: #eee;
+    transition-property: top, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) #myBtn:hover{
+    top: 95%;
+    background-color: #eee;
+    transition-property: top, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
