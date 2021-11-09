@@ -317,7 +317,7 @@ div.version{
     position: fixed;
     z-index: 10;
     top: 100%;
-    left: 78.5%;
+    right: calc(22% - 47px);
     color: #3d3d3d;
     padding: 7px;
     padding-right: 10px;
@@ -333,7 +333,7 @@ div.version{
 }
 
 html:not([data-scroll='0']) #myBtn{
-    top: 95%;
+    top: calc(100% - 33px);
     background-color: #c4c4c4;
     transition-property: top, background-color;
     transition-duration: 0.5s;
@@ -349,7 +349,7 @@ html:not([data-scroll='0']) #myBtn{
 }
 
 html:not([data-scroll='0']) #myBtn:hover{
-    top: 95%;
+    top: calc(100% - 33px);
     background-color: #dadada;
     transition-property: top, background-color;
     transition-duration: 0.5s;
