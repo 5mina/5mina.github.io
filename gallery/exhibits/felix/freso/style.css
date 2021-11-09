@@ -125,7 +125,7 @@ html:not([data-scroll='0']) div.hdct{
 }
 
 html:not([data-scroll='0']) div.hdct span.tab{
-    margin-left: 283.25px;
+    margin-left: 282px;
     transition-property: margin;
     transition-duration: 0.8s;
     transition-timing-function: ease;
@@ -238,10 +238,6 @@ div.hdlk td{
     transition: background-color 0.2s ease;
 }
 
-div.hdlk td.a{
-    background-color: #d8d8d8;
-}
-
 div.hdlk td:hover{
     background-color: #d1d1d1;
     transition: background-color 0.2s ease;
@@ -268,52 +264,14 @@ div.pher{
     min-height: 550px;
 }
 
-div.pher div.exe{
-    border-radius: 20px;
+div.pher div{
+    width: calc(50% - 7.4px);
 }
 
-div.pher div.exi{
-    height: 300px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-}
-
-div.pher div.exi img{
-    width: 32.9995%;
-    vertical-align: top;
-}
-
-div.pher div.exi div.bottom-left{
-  position: absolute;
-  height: 100%; 
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-div.pher div.exi div.bottom-left:hover{
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-div.pher div.exi div.hover{
-    height: 100%;
+div.pher div img{
     width: 100%;
-    background-color: rgb(10, 10, 10, 0.3);
-}
-
-div.pher div.exi div.hover div{
-    position: absolute;
-    bottom: 20px;
-    font-weight: bold;
-    color: #444444;
-    font-size: 30px;
-    background-color: rgb(255, 255, 255, 0.6);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 /* footer */

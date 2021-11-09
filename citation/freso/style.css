@@ -263,8 +263,53 @@ div.pher{
     background-color: #e9e9e9;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    padding: 20px;
     overflow: hidden;
     min-height: 550px;
+}
+
+div.pher div.source div.prev{
+    overflow: hidden;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    opacity: 1.0;
+    transition: opacity 0.5s ease;
+}
+
+div.pher div.source div.prev:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+div.pher div.source div.prev, div.pher div.source div.cites{
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.pher div.source div.cites{
+    width: calc(100% - 220px);
+    margin-left: 15px;
+}
+
+div.pher div.source div.prev div div{
+    overflow: hidden;
+    width: 98px;
+    height: 98px;
+    display: inline-block;
+}
+
+div.pher div.source div.cites a{
+    color: #3d3d3d;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    transition: color 0.2s ease;
+}
+
+div.pher div.source div.cites a:hover{
+    color: #929292;
+    transition: color 0.2s ease;
 }
 
 /* footer */
@@ -308,15 +353,15 @@ div.footer td span.tab{
 div.version{
     position: fixed;
     z-index: 10;
-    top: 96.5%;
-    left: 95%;
+    bottom: 2px;
+    right: 10px;
     color: #c2c2c2;
 }
 
 #myBtn{
     position: fixed;
     z-index: 10;
-    top: 100%;
+    bottom: -29px;
     right: calc(22% - 47px);
     color: #3d3d3d;
     padding: 7px;
@@ -327,31 +372,31 @@ div.version{
     outline: none;
     border: none;
     cursor: pointer;
-    transition-property: top, background-color;
+    transition-property: bottom, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
 
 html:not([data-scroll='0']) #myBtn{
-    top: calc(100% - 33px);
+    bottom: 4px;
     background-color: #c4c4c4;
-    transition-property: top, background-color;
+    transition-property: bottom, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
 
 #myBtn:hover{
-    top: 100%;
+    bottom: -29px;
     background-color: #dadada;
-    transition-property: top, background-color;
+    transition-property: bottom, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
 
 html:not([data-scroll='0']) #myBtn:hover{
-    top: calc(100% - 33px);
+    bottom: 4px;
     background-color: #dadada;
-    transition-property: top, background-color;
+    transition-property: bottom, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
