@@ -268,6 +268,15 @@ div.pher{
     min-height: 550px;
 }
 
+div.pher div.title{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+div.pher div.source:not(div.pher div.source:last-child){
+    margin-bottom: 20px;
+}
+
 div.pher div.source div.prev{
     overflow: hidden;
     border-radius: 20px;
@@ -288,8 +297,8 @@ div.pher div.source div.prev, div.pher div.source div.cites{
 }
 
 div.pher div.source div.cites{
-    width: calc(100% - 220px);
-    margin-left: 15px;
+    width: calc(100% - 215px);
+    margin-left: 10px;
 }
 
 div.pher div.source div.prev div div{

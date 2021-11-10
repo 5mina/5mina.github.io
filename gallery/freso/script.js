@@ -46,3 +46,15 @@ mybutton = document.getElementById("myBtn");
 function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+document.documentElement.dataset.down = 0;
+ 
+cate = document.getElementById("cate");
+
+function down() {
+    if (document.documentElement.dataset.down == 0){
+        document.documentElement.dataset.down = 1;
+    }else{
+        document.documentElement.dataset.down = 0;
+    }
+}
