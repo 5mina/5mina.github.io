@@ -5,14 +5,10 @@ GitHub pages repository.
 Lee Felix SKZ
 
 Yeonjun TXT
-
-Jake EN-
 ## Food
-Cheese
-
 Ice Cream
 ## Nature
-Feilds and Forests
+Fields and Forests
 ## Interior Design
 Liminal Spaces
 ## Graphics
