@@ -46,7 +46,61 @@
     <!-- Body -->
 
     <div class="pher">
+        <div class="greet">
+            Good <span id="greets"></span>
+            <hr>
+        </div>
+        <div class="msg">
+            Welcome
+            <div class="body">
+                This website is a collection of pictures about some of the things I like. 
+                A glimpse inside my mind if you will. 
+                This little project that took so much time was basically created by my love of CS and programming.
+                I hope that this little website can cater to you too.
+                <div>
+                    Feel free to explore!
+                </div>
+            </div>
+        </div>
+        <div class="h1">
+            <br>
+            Featured Exhibits
+            <hr>
+        </div>
+
+        <div class="exhi">
+            <a href="../gallery/exhibit/yeonjun/">
+                <div class="image">
+                    <img src="../gallery/exhibit/yeonjun/reso/c.jpg" class="cy" alt="Choi Yeonjun">
+                </div>
+            </a>
+            <a href="../gallery/exhibit/fieldsForest/">
+                <div class="image">
+                    <img src="../gallery/exhibit/fieldsForest/reso/8.jpg" class="faf" alt="Fields and Forests">
+                </div>
+            </a>
+            <a href="../gallery/exhibit/iceCream/">
+                <div class="image">
+                    <img src="../gallery/exhibit/iceCream/reso/2.jpg" class="ic" alt="Fields and Forests">
+                </div>
+            </a>
+        </div>
     </div>
+
+    <script>
+        const d = new Date();
+        var h = d.getHours();
+
+        console.log(h);
+
+        if (h >= 6 && h < 12) {
+            document.getElementById("greets").innerHTML = "Morning";
+        } else if (h >= 12 && h < 18) {
+            document.getElementById("greets").innerHTML = "Afternoon";
+        } else if (h >= 18 || h < 6) {
+            document.getElementById("greets").innerHTML = "Evening";
+        }
+    </script>
 
     <!-- Footer -->
     <div class="footer">
@@ -79,7 +133,7 @@
         <br>
     </div>    
 
-    <div class="version">V 1.5.0</div>
+    <div class="version">V 1.5.1</div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 

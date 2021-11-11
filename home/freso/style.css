@@ -15,7 +15,7 @@ body {
     background-color: #fcfcfc;
 }
 
-br, hr, pre, span, img{
+br, hr, pre, span, img, p{
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -265,6 +265,55 @@ div.pher{
     width: 760px;
     margin-left: auto;
     margin-right: auto;
+}
+
+div.pher div.greet{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+div.pher div.h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+div.pher div.msg{
+    text-align: center;
+    font-size: 50px;
+}
+
+div.pher div.body{
+    font-size: 20px;
+}
+
+div.pher div.body div{
+    font-size: 15px;
+    margin-top: 10px;
+    color:#4e4e4e
+}
+
+div.pher div.image{
+    width: 250.93px;
+    height: 250.93px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    transition: opacity 0.3s ease;
+}
+
+div.pher div.image:hover{
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+div.pher div.image img{
+    width: 110%;
+    margin-left: -5%;
+}
+
+div.pher div.exhi{
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 /* footer */
