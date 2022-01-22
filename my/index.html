@@ -5,7 +5,7 @@
 <head>
     <title>Home</title>
     <meta charset="utf-8">
-    <link rel="icon" href="reso/favicon.png">
+    <link rel="icon" href="../reso/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +29,132 @@
             PSHS Knowledge Hub
         </div>
     </header>
+    
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://lh3.googleusercontent.com/Csea-1fnxR0SoL7yYgXU_yxenCLCl8McsRbr7OKVS0nXqJuuXz-L-s47-nM3dESC8ek" alt="Barney">
+                </span>
+				
+                <div class="text logo-text">
+                    <span class="name">Barney Dinosaur</span>
+                    <span class="profession">9-Samat</span>
+					<span class= "email"> barney@gmail.com</span>
+                </div>
+            </div>
+			<hr>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+
+                <ul class="menu-links">
+                    <li class="search-box">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+					
+					
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+					
+					<li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-conversation icon' ></i>
+                            <span class="text nav-text">Chats</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-calendar-alt icon' ></i>
+                            <span class="text nav-text">Calendar</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="far fa-address-book icon"></i>
+                            <span class="text nav-text">Teacher Directory</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon' ></i>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+    searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+    });
+    </script>
+
     <section>
         <div>
             <div>
@@ -205,7 +331,7 @@
             <div>
                 <div style="background-color: #DDBDD4;">
                     <div>
-                        Values ‍  ‍ Education
+                        Values ‍  ‍ ‍ ‍ Education
                     </div>
                 </div>
                 <figure>
