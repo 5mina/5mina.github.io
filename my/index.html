@@ -34,7 +34,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="https://lh3.googleusercontent.com/Csea-1fnxR0SoL7yYgXU_yxenCLCl8McsRbr7OKVS0nXqJuuXz-L-s47-nM3dESC8ek" alt="Barney">
+                    <img src="../reso/barney.png" alt="Barney">
                 </span>
 				
                 <div class="text logo-text">
@@ -47,113 +47,50 @@
 
             <i class='bx bx-chevron-right toggle'></i>
         </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-
-
-
-                <ul class="menu-links">
-                    <li class="search-box">
-                        <a href="#">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">Dashboard</span>
-                        </a>
-                    </li>
-					
-					
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Notifications</span>
-                        </a>
-                    </li>
-					
-					<li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-conversation icon' ></i>
-                            <span class="text nav-text">Chats</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-calendar-alt icon' ></i>
-                            <span class="text nav-text">Calendar</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class="far fa-address-book icon"></i>
-                            <span class="text nav-text">Teacher Directory</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-cog icon' ></i>
-                            <span class="text nav-text">Settings</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
-                        <span class="text nav-text">Logout</span>
-                    </a>
-                </li>
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-                
-            </div>
-        </div>
-
-    </nav>
-
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-    toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-    searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-    })
-
-    modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
         
-    }
-    });
-    </script>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class='bx bx-home-alt' ></i>
+                <span class="text nav-text">Dashboard</span>
+            </a>
+        </div>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class='bx bx-bell'></i>
+                <span class="text nav-text">Notifications</span>
+            </a>
+        </div>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class='bx bx-conversation' ></i>
+                <span class="text nav-text">Chats</span>
+            </a>
+        </div>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class='bx bx-calendar-alt' ></i>
+                <span class="text nav-text">Calendar</span>
+            </a>
+        </div>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class="far fa-address-book"></i>
+                <span class="text nav-text">Teacher Directory</span>
+            </a>
+        </div>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class='bx bx-cog' ></i>
+                <span class="text nav-text">Settings</span>
+            </a>
+        </div>
+        <div class="nav-link" style="overflow: hidden; width: 1000px;">
+            <a href="#" style="color:#707070; text-decoration: none;">
+                <i class='bx bx-log-out' ></i>
+                <span class="text nav-text">Logout</span>
+            </a>
+        </div>
+    </nav>
 
     <section>
         <div>

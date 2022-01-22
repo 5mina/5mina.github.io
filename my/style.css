@@ -198,11 +198,15 @@ body.dark .sidebar li a:hover .text {
 }
 
 .sidebar .menu-bar {
-    height: calc(100% - 80px);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: scroll;
+    right: 0;
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .menu-bar::-webkit-scrollbar {
