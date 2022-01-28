@@ -9,11 +9,11 @@
 :root {
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
-    --sidebar-color:  #e0be97;
-    --primary-color: #695CFE;
+    --sidebar-color: #5A7AA6;
+    --primary-color: #2D5284;
     --primary-color-light:  #EDE4DA;
     --toggle-color: #DDD;
-    --text-color: #707070;
+    --text-color: #EBF4FF;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -48,7 +48,7 @@ body.dark {
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 320px;
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
@@ -91,6 +91,7 @@ body.dark {
 }
 
 .sidebar .text {
+	font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
@@ -137,7 +138,8 @@ header .image-text .profession {
 
 .sidebar header .image img {
     width: 50px;
-    border-radius: 6px;
+    border-radius: 50%;
+	margin-right: 10px;
 }
 
 .sidebar header .toggle {
@@ -148,7 +150,7 @@ header .image-text .profession {
     height: 25px;
     width: 25px;
     background-color: var(--primary-color);
-    color: var(--sidebar-color);
+    color: #EBF4FF;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -405,4 +407,20 @@ section>div div.desc {
     top: -75px;
     left: 20px;
     z-index: 2;
+}
+
+footer {
+	font-family: 'Quicksand', sans-serif;
+	background-color:#706A64;
+	margin-top: 110px;
+	padding-top: 0px;
+	padding-left: 147px;
+}
+
+#contactus {
+	text-align: right;
+}
+
+button:hover{
+	background-color: #EDE4DA;
 }
