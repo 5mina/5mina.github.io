@@ -424,3 +424,7 @@ footer {
 button:hover{
 	background-color: #EDE4DA;
 }
+
+footer>div>div>div>ul>li:hover{
+    text-decoration: underline;
+}
