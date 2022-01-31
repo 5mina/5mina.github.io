@@ -353,53 +353,121 @@ header figure img {
 }
 
 section {
-    padding-left: 147px;
-    padding-right: 47px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-left: 13%;
+    padding-right: 3%;
+    height: 250px;
+    margin-bottom: 15px;
     font-family: 'Quicksand', sans-serif;
 }
 
 section>div {
-    width: 250px;
-    height: 300px;
-    border-radius: 25px;
+    width: 23.5%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
     overflow: hidden;
     display: inline-block;
     background-color: #fff7ed;
 }
 
 section>div:not(section>div:first-child) {
-    margin-left: calc((100% - (1000px)) / 4);
+    margin-left: 1%;
+}
+
+section>div>div{
+    height: 35%;
 }
 
 section>div>div>div {
-    height: 100px;
-    width: 250px;
+    height: 100%;
+    width: 100%;
 }
 
 section>div>div>div>div {
-    display: inline-block;
-    font-size: 30px;
+    font-size: 17px;
     position: relative;
-    left: 20px;
-    top: 10px;
+    left: 15px;
+    top: 5px;
+}
+
+.banana {
+    font-size: 12px;
+    width: 50%;
 }
 
 section>div>div>figure {
-    left: calc(100% - 85px);
-    top: calc(-1 * (75px / 2));
+    left: calc(100% - 70px);
+    top: calc(-1 * (60px / 2));
     position: relative;
     overflow: hidden;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     background-color: white;
     border-radius: 50%;
-    font-size: 30px;
+}
+
+@media only screen and (min-width: 1200px){
+    section {
+        padding-left: 10%;
+        padding-right: 2%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    section>div {
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    
+    section>div>div>figure {
+        left: calc(100% - 100px);
+        top: calc(-1 * (90px / 2));
+        width: 90px;
+        height: 90px;
+    }
+    
+    section>div>div>div>div {
+        font-size: 25px;
+        top: 10px;
+    }
+    
+    .banana {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    section {
+        padding-left: 7%;
+        padding-right: 1%;
+        height: 500px;
+        margin-bottom: 35px;
+    }
+
+    section>div {
+        border-radius: 25px;
+        margin-bottom: 35px;
+    }
+
+    section>div>div>figure {
+        left: calc(100% - 150px);
+        top: calc(-1 * (140px / 2));
+        width: 140px;
+        height: 140px;
+    }
+
+    section>div>div>div>div {
+        font-size: 43px;
+        top: 10px;
+    }
+
+    .banana {
+        font-size: 25px;
+    }
 }
 
 section>div>div>figure>img {
-    width: 75px;
+    width: 100%;
 }
 
 section>div div.desc {
