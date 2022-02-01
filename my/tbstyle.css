@@ -360,13 +360,25 @@ section {
 }
 
 section>div {
-    width: 100%;
+    width: 48.4%;
     height: 175px;
     margin-left: 1%;
     border-radius: 15px;
     margin-bottom: 15px;
     overflow: hidden;
     background-color: #fff7ed;
+}
+
+.desc {
+    transform: translateY(100%);
+}
+
+section>div:nth-child(3) {
+    display: none;
+}
+
+section>div:not(:nth-child(3)){
+    display: inline-block;
 }
 
 section>div>div {
