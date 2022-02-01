@@ -45,6 +45,10 @@ header figure img {
     min-height: 60px;
 }
 
+.headz figure {
+    margin-left: 10px !important;
+}
+
 section {
     padding-left: 10px;
     padding-right: 10px;
