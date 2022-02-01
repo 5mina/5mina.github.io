@@ -71,16 +71,14 @@ section>div {
     overflow: hidden;
     display: inline-block;
     background-color: #fff7ed;
-    border-style: solid;
-    border-color: #807870;
-    border-width: 0px;
     transition-duration: 0.2s;
-    transition-property: border-width;
+    transition-property: box-shadow;
     transition-timing-function: ease;
+    box-shadow: 0px #000000;
 }
 
 section>div:hover {
-    border-width: 5px;
+    box-shadow: 2px;
 }
 
 .desc {
