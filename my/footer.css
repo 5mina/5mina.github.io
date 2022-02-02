@@ -81,18 +81,50 @@ div.footer figure {
     }
 
     div.footer img {
-        height: 205px;
+        height: 155px;
     }
     
+    .ft:not(:first-child) {
+        width: 38%;
+        margin-left: 55px;
+    }
+
     .div-1,
     .div-2,
     .div-3 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .div-2>ul,
     .div-3>ul {
-        font-size: 24px;
+        font-size: 20px;
+        left: -28px;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    div.footer {
+        height: 450px;
+    }
+
+    div.footer img {
+        height: 180px;
+    }
+
+    .ft:not(:first-child) {
+        width: 38%;
+        margin-left: 55px;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3 {
+        font-size: 35px;
+    }
+
+    .div-2>ul,
+    .div-3>ul {
+        font-size: 26px;
         left: -28px;
     }
 }
