@@ -1,0 +1,98 @@
+div.footer {
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 800px;
+    color: #ddd;
+    background-color: #706a64;
+    margin-top: 200px;
+}
+
+div.footer .ft {
+    vertical-align: top;
+}
+
+.ft:not(:first-child) {
+    margin-left: 0px;
+}
+
+div.footer .ft hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+div.footer img {
+    height: 150px;
+}
+
+div.footer figure {
+    margin: 0px;
+    position: relative;
+    left: -3px;
+}
+
+.div-1,
+.div-2,
+.div-3 {
+    font-size: 30px;
+}
+
+.div-2>ul,
+.div-3>ul {
+    font-size: 16px;
+    position: relative;
+    list-style: none;
+    left: -28px;
+}
+
+.div-2 {
+    margin-top:15px;
+}
+
+@media only screen and (min-width:768px){
+    div.footer{
+        padding-left: 85px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    div.footer{
+        height: 300px;
+    }
+    
+    div.footer .ft{
+        display: inline-block;
+    }
+    
+    .ft:not(:first-child) {
+        width: 32%;
+        margin-left: 55px;
+    }   
+    
+    .div-2 {
+            margin-top: 0px;
+    }
+} 
+
+@media only screen and (min-width:1260px){
+    div.footer {
+        height: 400px;
+    }
+
+    div.footer img {
+        height: 205px;
+    }
+    
+    .div-1,
+    .div-2,
+    .div-3 {
+        font-size: 40px;
+    }
+
+    .div-2>ul,
+    .div-3>ul {
+        font-size: 24px;
+        left: -28px;
+    }
+}
