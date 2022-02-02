@@ -61,6 +61,10 @@ header figure img {
     height: 50px;
 }
 
+.padding {
+    min-height: 80px;
+}
+
 a {
     color:inherit;
     text-decoration: none;
@@ -73,10 +77,6 @@ a:hover {
 
 .headz figure {
     margin-left: 10px !important;
-}
-
-.padding {
-    min-height: 80px;
 }
 
 section {
