@@ -1,0 +1,260 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #E3DACE;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d4c5b4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a49584;
+}
+
+/* Body - Subjects */
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #EDE4DA;
+}
+
+header {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 40px;
+}
+
+header div,
+header figure {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header figure:first-child {
+    top: 5px;
+    margin-left: 30px;
+    color: #a19595;
+}
+
+header figure:nth-child(2) {
+    padding-left: 5px;
+}
+
+header figure:first-child button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+header figure img {
+    height: 50px;
+}
+
+.padding {
+    min-height: 80px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.headz figure {
+    margin-left: 10px !important;
+}
+
+/*------------------------------*/
+
+
+
+/*---------FOOTER---------------------*/
+div.footer {
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 800px;
+    color: #ddd;
+    background-color: #706a64;
+    margin-top: 200px;
+}
+
+div.footer .ft {
+    vertical-align: top;
+}
+
+.ft:not(:first-child) {
+    margin-left: 0px;
+}
+
+div.footer .ft hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+div.footer img {
+    height: 150px;
+}
+
+div.footer figure {
+    margin: 0px;
+    position: relative;
+    left: -3px;
+}
+
+.div-1,
+.div-2,
+.div-3 {
+    font-size: 30px;
+}
+
+.div-2>ul,
+.div-3>ul {
+    font-size: 16px;
+    position: relative;
+    list-style: none;
+    left: -28px;
+}
+
+.div-2 {
+    margin-top: 15px;
+}
+
+@media only screen and (min-width:768px) {
+    div.footer {
+        padding-left: 85px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    div.footer {
+        height: 300px;
+    }
+
+    div.footer .ft {
+        display: inline-block;
+    }
+
+    .ft:not(:first-child) {
+        width: 32%;
+        margin-left: 55px;
+    }
+
+    .div-2 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width:1260px) {
+    div.footer {
+        height: 400px;
+    }
+
+    div.footer img {
+        height: 155px;
+    }
+
+    .ft:not(:first-child) {
+        width: 38%;
+        margin-left: 55px;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3 {
+        font-size: 30px;
+    }
+
+    .div-2>ul,
+    .div-3>ul {
+        font-size: 20px;
+        left: -28px;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    div.footer {
+        height: 450px;
+    }
+
+    div.footer img {
+        height: 180px;
+    }
+
+    .ft:not(:first-child) {
+        width: 38%;
+        margin-left: 55px;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3 {
+        font-size: 35px;
+    }
+
+    .div-2>ul,
+    .div-3>ul {
+        font-size: 26px;
+        left: -28px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .headz img {
+        height: 40px;
+    }
+
+    header {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        padding-left: 5px !important;
+    }
+}
+
+@media only screen and (min-width:760px) {
+    .padding {
+        min-height: 80px;
+    }
+    
+    .headz {
+        top: -5px;
+    }
+
+    .headz figure {
+        margin-left: 10px !important;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    
+    header {
+        font-size: 20px;
+    }
+    .padding {
+        min-height: 60px;
+    }
+
+    .headz figure {
+        margin-left: 10px !important;
+    }
+}
