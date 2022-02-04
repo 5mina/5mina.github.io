@@ -50,6 +50,41 @@ div.footer figure {
     margin-top:15px;
 }
 
+.div-2 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.div-2 a:hover {
+	text-decoration: underline;
+}
+
+
+.div-3 a:hover {
+	text-decoration: underline;
+}
+
+.buttons1 {
+    padding: 5px 10px;
+    border: none; 
+    cursor: pointer; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    margin-bottom:5px;
+    background-color: #EDE4DA;
+    transition-duration: 0.1s;
+    transition-property: background-color;
+    transition-timing-function: ease;
+}
+
+.buttons1:hover {
+    transition-duration: 0.1s;
+    transition-property: background-color;
+    transition-timing-function: ease;
+    background-color: #CBBEB1;
+}
+
+
 @media only screen and (min-width:768px){
     div.footer{
         padding-left: 85px;
