@@ -1,4 +1,4 @@
-:root{
+root{
 	--imgWidth:calc((100vw - 20px) / 4);
 }
 
@@ -66,14 +66,6 @@
 	text-align: center;
 }
 
-a{
-	text-decoration: underline solid rgba(0,0,0,0.0) 2px;
-	transition: text-decoration 0.1s ease;
-}
-
-a:hover{
-	text-decoration: underline solid rgba(0, 0, 0, 1.0) 2px;
-}
 
 @media only screen and (min-width:426px) {
 	.bdy{
