@@ -96,3 +96,43 @@ body {
 .back:hover {
 	background-color: #B2A598;
 }
+
+@media screen and (max-width: 768px) {
+
+.tracker {
+	width: 550px;
+	position: relative;
+}
+
+.wholething {
+	width: 550px;
+
+}
+
+}
+
+@media screen and (max-width: 360px) {
+
+.trackinst {
+	margin: auto;
+}	
+
+.tracker {
+	width: 300px;
+	margin:auto;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+	
+.wholething {
+	width: 300px;
+	margin:auto;
+	margin-bottom: 25px;
+}
+
+.fish, .score {
+	margin-top: 10px;
+}
+
+
+}

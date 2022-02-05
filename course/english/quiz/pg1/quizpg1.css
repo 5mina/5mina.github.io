@@ -101,31 +101,38 @@ body {
 }
 
 @media only screen and (max-width:768px){
-
-.trackinst {
-    margin-left: 140px;
-	width: 100%;
-}
-
-.tracker {
-	font-size: 17pt;
-	margin-top: 10px;
-	margin-bottom: 40px;
-	padding-left: 10px;
-	border-radius: 10px;
-	background: #F1EDE7;
-	width: 556px;
-	text-align: left;
 	
+.tracker {
+	width: 550px;
 }
 
 .instructions {
-	border-radius: 15px;
-	background: #F1EDE7;
-	padding: 20px;
-	width: 556px;
-	padding-bottom: 45px;
+	width: 550px;
 }
 
+}
+
+@media only screen and (max-width:360px){
+	
+.trackinst {
+	margin: auto;
+}	
+
+.tracker {
+	width: 300px;
+	margin:auto;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+	
+.instructions {
+	width: 300px;
+	margin:auto;
+}
+
+.inssubtitle, .institle {
+	margin-left: 8px;
+}
 
 }
