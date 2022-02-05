@@ -1,21 +1,134 @@
-body{
-	width:100%;
-	height:100%;
+:root{
+	--imgWidth:calc((100vw - 20px) / 4);
 }
 
-.profile1 {
-	border-radius: 15px;
-	background: #F1EDE7;
-	width: 400px;
-	padding: 15px;
-	margin-bottom: 45px;
-	margin-left: 100px;
-	margin-top: 25px;
-	font-family: 'Quicksand', sans-serif;
-	float: left;
+.bdy{
+	min-height:100vh;
+	width: 100vw;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.card{
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.card>hr{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.image, .name{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.image{
+	width: var(--imgWidth);
+	height: var(--imgWidth);
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1vw solid #948574;
+	background-color: #948574;
+}
+
+.image img{
+	width: var(--imgWidth);
+}
+
+.name{
+	margin-left:10px;
+	font-size: 3.5vw;
+	width: calc(100vw - (var(--imgWidth) + 76.2px));
+}
+
+.name span{
+	font-size: 6vw;
+}
+
+.name hr{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.content{
+	font-size: 2.5vw;
+}
+
+.content ul {
+	list-style: none;
+}
+
+.content li{
+	display: block;
 	text-align: center;
+}
+
+a{
+	text-decoration: underline solid rgba(0,0,0,0.0) 2px;
+	transition: text-decoration 0.1s ease;
+}
+
+a:hover{
+	text-decoration: underline solid rgba(0, 0, 0, 1.0) 2px;
+}
+
+@media only screen and (min-width:426px) {
+	.name {
+		width: calc(100vw - (var(--imgWidth) + 65px));
 	}
 
-.about1 {
-	margin-left: 250px;
+	.image {
+		width: calc(var(--imgWidth) - 4vw);
+		height: calc(var(--imgWidth) - 4vw);
+	}
+
+	.image img {
+		width: calc(var(--imgWidth) - 4vw);
+	}
+
+	.name span {
+		font-size: 4.5vw;
+	}
+
+	.name {
+		font-size: 2vw;
+	}
+
+	.content {
+		font-size: 1.5vw;
+	}
+}
+
+@media only screen and (min-width:768px){
+	.bdy{
+		margin-left: 68px;
+		width: calc(100vw - 68px);
+	}
+
+	.name{
+		width: calc(100vw - (var(--imgWidth) + 80px));
+	}
+
+	.image {
+		width: calc(var(--imgWidth) - 8vw);
+		height: calc(var(--imgWidth) - 8vw);
+	}
+
+	.image img {
+		width: calc(var(--imgWidth) - 8vw);
+	}
+	
+	.name span {
+		font-size: 4vw;
+	}
+
+	.name {
+		font-size: 2.1vw;
+	}
+
+	.content {
+		font-size: 1.8vw;
+	}
 }
