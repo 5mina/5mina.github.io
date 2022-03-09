@@ -1,0 +1,370 @@
+/* initializers */
+
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen{
+  html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {    
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: Calibri;
+    font-style: italic;
+    background-color: #fcfcfc;
+}
+
+br, hr, pre, span, img{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+pre{
+    color: inherit;
+    font: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+    transition-property: margin;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fcfcfc;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: #e9e9e9;
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	border-radius: 5px;
+	background: #b9b9b9;
+    transition: background 0.2s ease;
+}
+
+/* header */
+
+html:not([data-scroll='0']) div.head{
+    padding: 10px;
+    width: 842.4;
+    border-bottom-width: 5px;
+    border-color: rgb(190, 190, 190);
+    transition-property: padding, width, border-width, border-color;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.pfp{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition-property: width, height, border-radius;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.pfp img.pfpp{
+    width: 90px;
+    opacity: 1.0;
+    transition-property: opacity, width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.pfp:hover{
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    transition-property: width, height, border-radius;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.pfp img.pfpp:hover{
+    content: attr(title);
+    width: 90px;
+    opacity: 0.7;
+    transition-property: opacity, width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.hdlk{
+    margin-top: 22px;
+    font-size: 15px;
+    transition-property: margin, font-size;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.hdct{
+    margin-left: 10px;
+    transition-property: margin;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.hdct span.tab{
+    margin-left: 282px;
+    transition-property: margin;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) div.hdct span.b{
+    font-size: 13px;
+    transition: font-size 0.8s ease;
+}
+
+html:not([data-scroll='0']) div.hdct span.h{
+    font-size: 23px;
+    transition: font-size 0.8s ease;
+}
+
+div.head{
+    text-align: left;
+    padding: 20px;
+    width: 820.8px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    background-color: #e9e9e9;  
+    position: fixed;
+    z-index: 5;
+    border-color: rgb(190, 190, 190, 0.0);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition-property: padding, width, border-width, border-color;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.pfp{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    transition-property: width, height, border-radius;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.pfp:hover{
+    content: attr(title);
+    border-radius: 5px;
+    transition-property: width, height, border-radius;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.pfp img.pfpp{
+    width: 180px;
+    opacity: 1.0;
+    transition-property: opacity, width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.pfp img.pfpp:hover{
+    opacity: 0.7;
+    transition-property: opacity, width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.hdct{
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    vertical-align: top;
+    transition-property: margin;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.hdct span.h{
+    font-size: 30px;
+    color: black;
+    transition: font-size 0.8s ease;
+}
+
+div.hdct span.b{
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+    transition: font-size 0.8s ease;
+}
+
+div.hdlk{
+    margin-top: 90px;
+    position: relative;
+    left: -10px;
+    font-size: 20px;
+    transition-property: margin, font-size;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+div.hdlk table{
+    font-weight: bold;
+    border-spacing: 0px;
+}
+
+div.hdlk td{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: inherit;
+    color: rgb(87, 87, 87);
+    transition: background-color 0.2s ease;
+}
+
+div.hdlk td:hover{
+    background-color: #d1d1d1;
+    transition: background-color 0.2s ease;
+}
+
+div.hdlk td:not(td:last-child){
+    border-right: solid;
+    border-right-color: rgb(87, 87, 87);
+    border-right-width: 1px;
+}
+
+div.hdpd{
+    height: 240px;
+}
+
+/* body */
+
+div.pher{
+    background-color: #e9e9e9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    min-height: 550px;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.pher div{
+    width: calc(50% - 7.4px);
+}
+
+div.pher div img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+
+div.footer{
+    color: #5c5c5c;
+    background-color: #e2e2e2;
+    padding-right: 72px;
+    padding-left: 72px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    width: 656px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #c5c5c5;
+}
+
+div.footer table{
+    width: 90%;
+    border-spacing: 0px;
+}
+
+div.footer td{
+    width: 33.33333%;
+}
+
+div.footer a{
+    color: #3d3d3d;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    transition: color 0.2s ease;
+}
+
+div.footer a:hover{
+    color: #929292;
+    transition: color 0.2s ease;
+}
+
+div.footer td span.tab{
+    margin-left: 5px;
+}
+
+div.version{
+    position: fixed;
+    z-index: 10;
+    bottom: 2px;
+    right: calc(50% + 410px);
+    color: #c2c2c2;
+}
+
+#myBtn{
+    position: fixed;
+    z-index: 10;
+    bottom: -29px;
+    left: calc(50% + 405px);
+    color: #3d3d3d;
+    padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition-property: bottom, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) #myBtn{
+    bottom: 4px;
+    background-color: #c4c4c4;
+    transition-property: bottom, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#myBtn:hover{
+    bottom: -29px;
+    background-color: #dadada;
+    transition-property: bottom, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+html:not([data-scroll='0']) #myBtn:hover{
+    bottom: 4px;
+    background-color: #dadada;
+    transition-property: bottom, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}

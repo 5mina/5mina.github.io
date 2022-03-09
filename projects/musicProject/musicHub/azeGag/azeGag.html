@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aze Gag | Mamamoo</title>
+		<link rel="icon" type="image/jpeg" href="azeGagAlbum.jpg"/>
+		<style>
+			@font-face{
+			font-family:Migra;
+			src:url(../../drukWideBold.ttf);}
+
+			@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to{transform: rotate(360deg);}}
+
+			body {
+			background-color:#9927c5;}
+
+			p.a {
+			margin:auto;
+			background:#801fa6;
+			width:400px;
+			height:400px;
+			padding:20px;
+			border-radius:50%;}
+
+			p.a #album {
+			z-index:1;
+			position:relative;
+			animation: rotation 40s infinite linear;}
+
+			::-webkit-scrollbar {
+			width: 10px;
+			height: 10px;}
+			::-webkit-scrollbar-track {
+			background: #9927c5;}
+			::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background: #801fa6;}
+			::-webkit-scrollbar-thumb:hover {
+			background: #801fa6;}
+		</style>
+	</head>
+	<body>
+		<p style="text-align:center;font-family:Migra;font-size:65px;color:#78cac8;margin:0px;">AZE GAG
+		<span style="font-family:Migra;font-size:35px;color:#78cac8;margin:0px;">MAMAMOO<span></p>
+
+		<p class="a"><img id="album" src="azeGagAlbum.jpg" height="400" style="border-radius:50%;text-align:center;"></p>
+
+		<p class="b" style="text-align:center;margin:10px;">
+		<audio controls loop>
+			<source src="azeGag.mp3" type="audio/mpeg">
+		</audio>
+		</p>
+		<a href="../../index.html" style="text-decoration:none;">
+		<p style="text-align:center;font-family:Migra;font-size:35px;color:#78cac8;margin:0px;">BACK TO HUB</p></a>
+	</body>
+</html>

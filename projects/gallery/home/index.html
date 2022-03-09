@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Modern Archive Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="reso/favicon.png">
+    <link rel="stylesheet" href="freso/style.css">
+    <script src="https://kit.fontawesome.com/462ef94a47.js" crossorigin="anonymous"></script>
+    <script src="freso/script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="head">
+        <div class="pfp">
+            <a href="../home/">
+                <img class="pfpp" title="Home Page" src="reso/flowers.jpg" alt="Flowers">
+            </a>
+        </div>
+        <div class="hdct">
+            <span class="h">Modern Archive Gallery</span>
+            <hr>
+            <span class="b">A collection of pictures that I like, presented to you.<span class="tab"></span></span>
+            <div class="hdlk">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="../gallery/">Main Gallery</a>
+                        </td>
+                        <td>
+                            <a href="../about/">About the Owner</a>
+                        </td>
+                        <td>
+                            <a href="../citation/">Citation Hub</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="hdpd"></div>
+
+    <!-- Body -->
+
+    <div class="pher">
+        <div class="greet">
+            Good <span id="greets"></span>
+            <hr>
+        </div>
+        <div class="msg">
+            Welcome
+            <div class="body">
+                This website is a collection of pictures about some of the things I like. 
+                A glimpse inside my mind if you will. 
+                This little project that took so much time was basically created by my love of CS and programming.
+                I hope that this little website can cater to you too.
+                <div>
+                    Feel free to explore!
+                </div>
+            </div>
+        </div>
+        <div class="h1">
+            <br>
+            Featured Exhibits
+            <hr>
+        </div>
+
+        <div class="exhi">
+            <a href="../gallery/exhibit/yeonjun/">
+                <div class="image">
+                    <img src="../gallery/exhibit/yeonjun/reso/c.jpg" class="cy" alt="Choi Yeonjun">
+                </div>
+            </a>
+            <a href="../gallery/exhibit/fieldsForest/">
+                <div class="image">
+                    <img src="../gallery/exhibit/fieldsForest/reso/8.jpg" class="faf" alt="Fields and Forests">
+                </div>
+            </a>
+            <a href="../gallery/exhibit/iceCream/">
+                <div class="image">
+                    <img src="../gallery/exhibit/iceCream/reso/2.jpg" class="ic" alt="Fields and Forests">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const d = new Date();
+        var h = d.getHours();
+
+        console.log(h);
+
+        if (h >= 6 && h < 12) {
+            document.getElementById("greets").innerHTML = "Morning";
+        } else if (h >= 12 && h < 18) {
+            document.getElementById("greets").innerHTML = "Afternoon";
+        } else if (h >= 18 || h < 6) {
+            document.getElementById("greets").innerHTML = "Evening";
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <br>
+        <table>
+            <tr>
+                <td colspan="3">This webisite was created by John Paul Tabrilla. The images used throughout this website are not owned by John Paul Tabrilla unless stated otherwise. Links to the sources can be seen on the <a href="../citation/">Citation Hub</a> page.</td>
+            </tr>
+            <tr>
+                <td colspan="3"><span class="tab"></span></td>
+            </tr>
+            <tr>
+                <td colspan="3">Navigation:</td>
+            </tr>
+            <tr>
+                <td colspan="3"><a href="../home/">Go to Home Page.</a></td>
+            </tr>
+            <tr>
+                <td colspan="3"><a href="#top">Back to top.</a></td>
+            </tr>
+            <tr>
+                <td colspan="3"><span class="tab"></span></td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/5mina" target="_blank"><i class="fab fa-github"></i><span class="tab"></span>Github</a></td>
+                <td><a href="https://twitter.com/_jaymien" target="_blank"><i class="fab fa-twitter"></i><span class="tab"></span>Twitter</a></td>
+                <td><a href="mailto:jaymien.day134%40gmail.com"><i class="fas fa-at"></i><span class="tab"></span>Email</a></td>
+            </tr>
+        </table>
+        <br>
+    </div>    
+
+    <div class="version">V 1.5.6</div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+
+</html>
