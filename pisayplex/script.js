@@ -30,7 +30,7 @@ const itemList = [
         prod_price: 200
     },
     {
-        prod_name: "Tutoring/Consultation Service",
+        prod_name: "Tutoring/Consultation Service (per Hour)",
         prod_price: 250
     }
 ];
@@ -47,6 +47,7 @@ function displayOrder() {
         orderBox+="<div class=\"cart-item\"><span class=\"product-name\">"+orderArray[i].prod_name+"</span><br><span class=\"product-price\">₱"+orderArray[i].prod_price+"</span>&nbsp;&nbsp;<span class=\"remove-item\" onclick=\"removeItem("+i+")\">Remove Item</span></div><hr>";
     }
     document.getElementById("order-box").innerHTML=orderBox;
+    document.getElementById("order-box").scrollTop=document.getElementById("order-box").scrollHeight
 }
 
 function removeItem(x) {

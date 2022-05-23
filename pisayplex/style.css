@@ -8,29 +8,29 @@ body{
 }
 
 #header{
-    height: 100px;
+    height: 10.417vw;
     background-color: #F1D7A5;
     overflow: hidden;
 }
 
 #header>img{
-    height: 150%;
+    height: 190%;
     margin-top: 1.6%;
-    margin-left: 15px;
+    margin-left: 1.110vw;
 }
 
 .card-box{
     padding: 1.850vw;
+    margin: auto;
     font-size: 0px;
 }
 
 .card{
-    width: calc(16.66666% - 1.480vw);
+    width: calc(16.66666% - 1.680vw);
     padding: 0.222vw;
     margin: 0.444vw;
     border: 0.074vw solid lightgray;
     display: inline-block;
-    font-size: 1.110vw;
     vertical-align: top;
 }
 
@@ -132,11 +132,11 @@ body{
 }
 
 .cart-item {
-    font-size: 15px;
+    font-size: 1.110vw;
 }
 
 .product-name {
-    font-size: 18px;
+    font-size: 1.332vw;
 }
 
 .remove-item{
@@ -145,7 +145,8 @@ body{
     text-decoration: underline solid rgb(184, 0, 0) 1px;
 }
 
-/*
+@media only screen and (max-width: 770px) {
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body{
@@ -156,36 +157,36 @@ body{
 }
 
 #header{
-    height: 100px;
+    height: 10.417vw;
     background-color: #F1D7A5;
     overflow: hidden;
 }
 
 #header>img{
-    height: 150%;
+    height: 190%;
     margin-top: 1.6%;
-    margin-left: 15px;
+    margin-left: 1.110vw;
 }
 
 .card-box{
-    padding: 25px;
+    padding: 1.850vw;
+    margin: auto;
     font-size: 0px;
 }
 
 .card{
-    width: calc(16.66666% - 20px);
-    padding: 3px;
-    margin: 6px;
-    border: 1px solid lightgray;
+    width: calc(25% - 1.80vw);
+    padding: 0.222vw;
+    margin: 0.444vw;
+    border: 0.074vw solid lightgray;
     display: inline-block;
-    font-size: 15px;
     vertical-align: top;
 }
 
 .card-img{
     width: 90%;
-    margin: calc(((100vw - 50px) / 6 - 20px) * 0.05);
-    max-height: calc(((100vw - 50px) / 6 - 20px) * 0.9);
+    margin: calc(((100vw - 3.701vw) / 4 - 1.680vw) * 0.05);
+    max-height: calc(((100vw - 3.701vw) / 4 - 1.680vw) * 0.9);
     overflow: hidden;
 }
 
@@ -194,13 +195,13 @@ body{
 }
 
 .card-name{
-    font-size: 1.7vw;
+    font-size: 2.75vw;
     word-break: break-word;
 }
 
 .card-price{
     word-break: break-word;
-    font-size: 1.2vw;
+    font-size: 2.5vw;
     margin-top: 0.3vw;
 }
 
@@ -210,7 +211,7 @@ body{
 }
 
 .card-button>button{
-    font-size: 1.2vw;
+    font-size: 2vw;
     font-family: inherit;
     font-weight: inherit;
     border: none;
@@ -229,14 +230,219 @@ body{
 }
 
 .form-box{
-    padding: 25px;
-    padding-bottom: 125px;
+    padding: 1.850vw;
+    padding-bottom: 9.252vw;
     font-size: 0px;
 }
 
 .form, .order-box{
-    width: 50%;
-    font-size: 50px;
+    width: 48.75%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form{
+    margin-left: 1.25%;
+}
+
+.order-box{
+    margin-right: 1.25%;
+}
+
+.form, input {
+    font-size: 2.3vw;
+}
+
+#cust_addr{
+    width: 96.5%;
+}
+
+#cust_name, #cust_email{
+    width: 95%;
+}
+
+.parts{
+    width: 49%;
+    padding: 0px;
     display: inline-block;
 }
-*/
+
+#submit {
+    margin-top: 1.850vw;
+    float: right;
+    margin-right: 1.110vw;
+}
+
+.order-box{
+    background-color: #ececec;
+    height: 27.5vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    font-size: 2vw;
+}
+
+.product-name {
+    font-size: 2.3vw;
+}
+
+.remove-item{
+    color: rgb(184, 0, 0);
+    cursor: pointer;
+    text-decoration: underline solid rgb(184, 0, 0) 1px;
+}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+#header{
+    height: 20vw;
+    background-color: #F1D7A5;
+    overflow: hidden;
+}
+
+#header>img{
+    height: 190%;
+    margin-top: 3.1%;
+    margin-left: 1.110vw;
+}
+
+.card-box{
+    padding: 1.850vw;
+    margin: auto;
+    font-size: 0px;
+}
+
+.card{
+    width: calc(50% - 2vw);
+    padding: 0.222vw;
+    margin: 0.444vw;
+    border: 0.074vw solid lightgray;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-img{
+    width: 90%;
+    margin: calc(((100vw - 3.701vw) / 2 - 1.680vw) * 0.05);
+    max-height: calc(((100vw - 3.701vw) / 2 - 1.680vw) * 0.9);
+    overflow: hidden;
+}
+
+.card-img>img{
+    width: 100%;
+}
+
+.card-name{
+    font-size: 5vw;
+    word-break: break-word;
+}
+
+.card-price{
+    word-break: break-word;
+    font-size: 4vw;
+    margin-top: 0.3vw;
+}
+
+.card-button{
+    margin-top: 0.75vw;
+    text-align: right;
+}
+
+.card-button>button{
+    font-size: 3.5vw;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: #dddddd;
+    cursor: pointer;
+    width: 55%;
+    text-align: center;
+}
+
+.card-button>button:hover{
+    background-color: #c5c5c5;
+}
+
+.card-button>button:active{
+    background-color: #818181;
+}
+
+.form-box{
+    padding: 1.850vw;
+    padding-bottom: 9.252vw;
+    font-size: 0px;
+}
+
+.form, .order-box{
+    width: 100%;
+    display: block;
+}
+
+.form{
+    margin-left: 0%;
+    margin-top: 10px;
+}
+
+.order-box{
+    margin-right: 0%;
+}
+
+.form, input {
+    font-size: 4vw;
+}
+
+#cust_addr{
+    width: 96.5%;
+}
+
+#cust_name, #cust_email{
+    width: 95%;
+}
+
+.parts{
+    width: 49%;
+    padding: 0px;
+    display: inline-block;
+}
+
+#submit {
+    margin-top: 1.850vw;
+    float: right;
+    margin-right: 1.110vw;
+}
+
+.order-box{
+    background-color: #ececec;
+    height: 40vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    font-size: 3.5vw;
+}
+
+.product-name {
+    font-size: 4vw;
+}
+
+.remove-item{
+    color: rgb(184, 0, 0);
+    cursor: pointer;
+    text-decoration: underline solid rgb(184, 0, 0) 1px;
+}
+
+}
