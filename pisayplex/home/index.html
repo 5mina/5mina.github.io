@@ -4,97 +4,37 @@
     <title>Pisayplex</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../pc.css">
+    <link rel="stylesheet" href="../tablet.css" media="screen and (max-width: 770px)">
+    <link rel="stylesheet" href="../phone.css" media="screen and (max-width: 450px)">
     <script src="../script.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <div id="header"><img src="../pics/logo.png"></div>
+    <div id="search-bar"><form><input type="text" id= "search-box" name= "search-box" placeholder= "Search" pattern="[a-zA-Z0-9\s]" onkeydown="return (event.keyCode!=13);"></form><div id="searchResult"></div></div>
 
-    <div class="card-box">
-        <div class="card">
-            <div class="card-img"><img src="../pics/book.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Book (Soft Copy)</div>
-                <div class="card-price">₱150</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(1)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/poster.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Canva Poster Templates</div>
-                <div class="card-price">₱75</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(2)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/presentation.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Canva Presentation Templates</div>
-                <div class="card-price">₱75</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(3)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/notes.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Printed Notes</div>
-                <div class="card-price">₱500</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(4)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/review.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">College Review Booklets</div>
-                <div class="card-price">₱500</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(5)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/review.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Competition Review Booklets</div>
-                <div class="card-price">₱500</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(6)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/test.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Test Reviewer</div>
-                <div class="card-price">₱200</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(7)">Add to Cart</button></div>
-        </div>
-        <div class="card">
-            <div class="card-img"><img src="../pics/tutor.jpg"></div>
-            <div class="card-text">
-                <div class="card-name">Tutoring/Consultation Service (per Hour)</div>
-                <div class="card-price">₱250</div>
-            </div>
-            <div class="card-button"><button onclick="addOrder(8)">Add to Cart</button></div>
-        </div>
-    </div>
+    <div class="card-box" id="card-box"></div>
     <hr>
     <div class="form-box">
         <div class="order-box" id="order-box"></div>
         <div class="form"><form method="get" action="http://sirjm.infinityfreeapp.com/checkout.php">
             <div class="parts">
                 <label for="cust_name">Name</label><br>
-                <input type="text" id="cust_name" name="cust_name" pattern="[a-zA-Z.-\s]" required>
+                <input type="text" id="cust_name" name="cust_name" pattern="[a-zA-Z.-\s]" onchange="saveForm()" required>
             </div>
             <div class="parts">
                 <label for="cust_email">Email</label><br>
-                <input type="text" id="cust_email" name="cust_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input type="text" id="cust_email" name="cust_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onchange="saveForm()" required>
             </div><br>
             <label for="cust_addr">Address</label><br>
-            <input type="text" id="cust_addr" name="cust_addr" pattern="[a-zA-Z0-9.-\s]" required><br>
-            <input type="submit" id="submit" name="submit" onclick="if(document.getElementById('cust_addr').value != '' && document.getElementById('cust_email').value != '' && document.getElementById('cust_name').value != ''){if(document.getElementById('cust_order').value == ''){alert('No Items In Cart')}}">
-            <input type="text" id="cust_order" name="cust_order" value="" required hidden>
+            <input type="text" id="cust_addr" name="cust_addr" pattern="[a-zA-Z0-9.-\s]" onchange="saveForm()" required><br>
+            <input type="submit" id="submit" name="submit" value="Checkout" onclick="if(document.getElementById('cust_addr').value != '' && document.getElementById('cust_email').value != '' && document.getElementById('cust_name').value != ''){if(document.getElementById('cust_order').value == ''){alert('No Items In Cart')}}">
+            <input type="text" id="cust_order" name="cust_order" required hidden>
         </form></div>
     </div>
+
+    <button id="godown" onclick="window.scrollTo(0, document.body.scrollHeight);">To Cart</button>
 </body>
 </html>
