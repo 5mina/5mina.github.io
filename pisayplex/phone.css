@@ -152,10 +152,17 @@ body{
     font-size: 4vw;
 }
 
-#search-box{
-    width: 97%;
+#navbar{
+    height: 6vw;
 }
 
-#searchResult>div{
-    width: 96%;
+#navbar>div>div{
+    min-width: 60vw;
+    height: 8vw;
+}
+
+#header2{
+    padding: 3vw;
+    padding-bottom: 0px;
+    font-size: 8vw;
 }

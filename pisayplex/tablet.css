@@ -145,10 +145,17 @@ body{
     text-decoration: underline solid rgb(184, 0, 0) 1px;
 }
 
-#search-box{
-    width: 98%;
+#navbar{
+    height: 4vw;
 }
 
-#searchResult>div{
-    width: 98%;
+#navbar>div>div{
+    min-width: 35vw;
+    height: 4vw;
+}
+
+#header2{
+    padding: 2vw;
+    padding-bottom: 0px;
+    font-size: 7vw;
 }
