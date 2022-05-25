@@ -489,10 +489,9 @@ function loadForm() {
         document.getElementById("cust_email").value = x.cust_email;
         document.getElementById("cust_addr").value = x.cust_addr;
         orderArray = JSON.parse(x.cust_order);
-        displayOrder();
         setTimeout(() => { document.getElementById("order-box").scrollTop=document.getElementById("order-box").scrollHeight; }, 1);
-
     }
+    displayOrder();
 }
 
 function createcard(x) {
