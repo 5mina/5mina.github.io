@@ -272,6 +272,7 @@ body{
     vertical-align: middle;
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 #item-image>img{
