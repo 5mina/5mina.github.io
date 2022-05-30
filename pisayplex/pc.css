@@ -181,6 +181,14 @@ body{
     padding: 3px;
 }
 
+#searchResult>div:hover{
+    background-color: #eeeeee;
+}
+
+#searchResult>div:active{
+    background-color: #d8d8d8;
+}
+
 #navbar{
     background-color: #F1D7A5;
     user-select: none;
@@ -208,6 +216,10 @@ body{
 
 #navbar>div>div:hover{
     background-color: #d8ba83;
+}
+
+#navbar>div>div:active{
+    background-color: #b99758;
 }
 
 #header2{

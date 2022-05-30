@@ -687,7 +687,7 @@ function modalSearch (x) {
 function modalAppear(x){
     if(x==true){
         if(modal2==false){document.getElementById('number-box').value = ''}
-        hideSearch(true);
+        if(hide1==false){hideSearch(true)}
         document.getElementById('modal').style.opacity = '1';
         document.getElementById('modal').style.top = '0vh';
     }else{
