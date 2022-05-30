@@ -136,3 +136,9 @@
 .empty-cart{
     font-size: 10vw;
 }
+
+#conts{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}

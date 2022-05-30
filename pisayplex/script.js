@@ -660,7 +660,7 @@ function navDisplay(x) {
             break;
         case 8:
             var v = [itemList.length-5,itemList.length-4,itemList.length-3,itemList.length-2,itemList.length-1];
-            card_box.innerHTML = createcardset(v);
+            card_box.innerHTML = createcardset(v) + "<div id=\"conts\"><h3 class=\"con\">CONTRIBUTIONS</h3><table class=\"table4\"><tr><td><div class=\"cont\">Maverick Agbayani<br><ul><li>Images</li><li>Homepage</li></ul></div></td><td><div class=\"cont\">Xabi Difuntorum<br><ul><li>Images</li><li>About Page</li></ul></div></td><td><div class=\"cont\">John Paul Tabrilla<br><ul><li>Javascript</li><li>Pages</li></ul></div></td><td><div class=\"cont\">Eunys Barbon<br><ul><li>Layout & Design</li><li>Pages</li></ul></div></td><td><div class=\"cont\">Pauleen Guisdan<br><ul><li>Layout & Design</li><li>Modals</li></ul></div></td></tr></table><br><h3 class=\"ref\">REFERENCES</h3><div> <table class=\"table3\"><tr><td><a href=\"https://shopee.ph/\" target=\"_blank\"><div class=\"refs\"><img src=\"../pics/shopee.png\" onclick=\"navDisplay(3)\" alt=\"afaf\"><br></div></a></td><td><a href=\"https://docs.google.com/document/d/1WpxSBaiSDTKdyOfgL07W6r7qqIxMo6jw5hipayo6bSA/edit?usp=sharing\" target=\"_blank\"><div class=\"refs\"><img src=\"../pics/sources.png\" onclick=\"navDisplay(4)\" alt=\"afaf\"><br></div></a></td></tr></table></div></div>";
             head.innerHTML = "About the Company";
             break;
     }
