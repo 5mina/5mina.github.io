@@ -448,22 +448,22 @@ const itemList = [
     },
     {
         prod_name: "Hoshi Kwon",
-        prod_price: 15000000,
+        prod_price: 150000000,
         prod_pic: ["../pics/hoshi.png"]
     },
     {
         prod_name: "Kwon Soonyoung",
-        prod_price: 15000000,
+        prod_price: 150000000,
         prod_pic: ["../pics/soonyoung.png"]
     },
     {
         prod_name: "Changmin Ji",
-        prod_price: 15000000,
+        prod_price: 150000000,
         prod_pic: ["../pics/q.png"]
     },
     {
         prod_name: "Juyeon + Q",
-        prod_price: 30000000,
+        prod_price: 300000000,
         prod_pic: ["../pics/jukyu.png"]
     },
     {
