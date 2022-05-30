@@ -14,7 +14,7 @@
     <div id="modal" onclick="modalSearch(true)">
         <div id="item-modal" onclick="modalSearch(false)">
             <div id="item-image">
-                <img id="modal-img" src="../pics/hoshi.png" alt="hottie">
+                <img id="modal-img" src="../pics/hoshi.png" alt="hottie" onload="centerImage();">
             </div>
             <div id="modal-content">
                 <div id="item-name"></div>
@@ -45,7 +45,7 @@
     <hr>
     <div class="form-box">
         <div class="order-box" id="order-box"></div>
-        <div class="form"><form method="get" action="http://sirjm.infinityfreeapp.com/checkout.php">
+        <div class="form"><form method="get" action="http://sirjm.infinityfreeapp.com/checkout.php" onsubmit="orderArray=[];saveForm();">
             <div class="parts">
                 <label for="cust_name">Name</label><br>
                 <input type="text" id="cust_name" name="cust_name" pattern="[a-zA-Z.-\s]" onchange="saveForm()" required>

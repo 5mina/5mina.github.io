@@ -1,6 +1,7 @@
 var modalitemno = 0;
 var orderArray = [];
 const itemList = [
+    90,
     {
         prod_name: "G8 AdTech Set",
         prod_price: 450,
@@ -94,7 +95,7 @@ const itemList = [
     {
         prod_name: "3-in-1 Coffee",
         prod_price: 25,
-        prod_pic: ["../pics/coffee.png"]
+        prod_pic: ["../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/coffee.png","../pics/jaemin.png","../pics/jaemin (1).png","../pics/jaemin (2).png","../pics/jaemin (3).png","../pics/jaemin (4).png","../pics/jaemin (5).png","../pics/jaemin (6).png","../pics/jaemin (7).png","../pics/jaemin (8).png","../pics/jaemin (9).png","../pics/jaemin (10).png","../pics/jaemin (11).png","../pics/jaemin (12).png","../pics/jaemin (13).png","../pics/jaemin (14).png","../pics/jaemin (14).png"]
     },
     {
         prod_name: "Colored Pencils (24 Color Set)",
@@ -307,6 +308,11 @@ const itemList = [
         prod_pic: ["../pics/rulers.png"]
     },
     {
+        prod_name: "Sanrio Bands Pack",
+        prod_price: 20,
+        prod_pic: ["../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/sanrio.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san.png","../pics/san (1).png","../pics/san (2).png","../pics/san (2).png","../pics/san (3).png","../pics/san (3).png","../pics/san (3).png","../pics/san (3).png","../pics/san (3).png","../pics/san (3).png","../pics/san (3).png","../pics/san (3).png","../pics/san (4).png","../pics/san (4).png","../pics/san (4).png","../pics/san (4).png"]
+    },
+    {
         prod_name: "School Uniform Blouse & Skirt",
         prod_price: 250,
         prod_pic: ["../pics/uniform_bs.png"]
@@ -457,14 +463,29 @@ const itemList = [
         prod_pic: ["../pics/soonyoung.png"]
     },
     {
-        prod_name: "Changmin Ji",
+        prod_name: "Ji Changmin",
         prod_price: 150000000,
         prod_pic: ["../pics/q.png"]
+    },
+    {
+        prod_name: "Lee Juyeon",
+        prod_price: 150000000,
+        prod_pic: ["../pics/juyeon.png","../pics/juyeon (1).png","../pics/juyeon (2).png","../pics/juyeon (3).png","../pics/juyeon (4).png","../pics/juyeon (5).png","../pics/juyeon (6).png"]
     },
     {
         prod_name: "Juyeon + Q",
         prod_price: 300000000,
         prod_pic: ["../pics/jukyu.png"]
+    },
+    {
+        prod_name: "Choi Yeonjun",
+        prod_price: 150000000,
+        prod_pic: ["../pics/yeonjun.png"]
+    },
+    {
+        prod_name: "Eric Sohn",
+        prod_price: 150000000,
+        prod_pic: ["../pics/eric (1).png","../pics/eric (2).png","../pics/eric (3).png","../pics/eric (4).png"]
     },
     {
         prod_name: "Maverick Agbayani",
@@ -489,12 +510,12 @@ const itemList = [
     {
         prod_name: "Mariah Guisdan",
         prod_price: 1000000,
-        prod_pic: ["../pics/guisdan.png"]
+        prod_pic: ["../pics/guisdan.png", "../pics/guisdan2.png"]
     }
 ];
 
 function addOrder(x) {
-    orderArray[orderArray.length] = itemList[x-1];
+    orderArray[orderArray.length] = itemList[x];
     setTimeout(() => { displayOrder();setTimeout(() => { document.getElementById("order-box").scrollTop=document.getElementById("order-box").scrollHeight; }, 1) }, 1);
 }
 
@@ -508,7 +529,7 @@ function displayOrder() {
             orderBox+="<div class=\"cart-item\"><span class=\"product-name\">"+(i+1)+")&nbsp;"+orderArray[i].prod_name+"</span><br><span class=\"product-price\">₱"+orderArray[i].prod_price+"</span>&nbsp;&nbsp;<span class=\"remove-item\" style=\"user-select: none;\" onclick=\"removeItem("+i+");saveForm()\">Remove Item</span></div><hr>";
         }
         orderBox+="<div class=\"remove-item cart-item\" style=\"user-select: none;text-align:right;margin-right:1vw;margin-bottom:1vw\" onclick=\"orderArray=[];displayOrder();saveForm()\">Remove All Items</div>";
-    } else {orderBox = "<div style=\"font-size:4vw;color:gray;text-align:center;user-select: none;\"><br>Empty Cart</div>"; x = ''}
+    } else {orderBox = "<div class=\"empty-cart\"><br>Empty Cart</div>"; x = ''}
     document.getElementById("cust_order").setAttribute("value", x);
     document.getElementById("order-box").innerHTML=orderBox;
 }
@@ -541,7 +562,7 @@ function loadForm() {
 }
 
 function createcard(x) {
-    return "<div class=\"card\"><div class=\"card-img\"><img src=\""+itemList[x-1].prod_pic[Math.floor(Math.random()*itemList[x-1].prod_pic.length)]+"\" alt=\""+itemList[x-1].prod_name+"\" onclick=\"modal("+x+")\"></div><div class=\"card-text\"><div class=\"card-name\">"+itemList[x-1].prod_name+"</div><div class=\"card-price\">₱"+itemList[x-1].prod_price+"</div></div><div class=\"card-button\"><button onclick=\"addOrder("+x+");saveForm()\">Add to Cart</button></div></div>";
+    return "<div class=\"card\"><div class=\"card-img\"><img src=\""+itemList[x].prod_pic[Math.floor(Math.random()*itemList[x].prod_pic.length)]+"\" alt=\""+itemList[x].prod_name+"\" onclick=\"modal("+x+")\"></div><div class=\"card-text\"><div class=\"card-name\">"+itemList[x].prod_name+"</div><div class=\"card-price\">₱"+itemList[x].prod_price+"</div></div><div class=\"card-button\"><button onclick=\"addOrder("+x+");saveForm()\">Add to Cart</button></div></div>";
 }
 
 function createset(x,y) {
@@ -581,10 +602,10 @@ function search() {
     if (document.getElementById( "search-box").value.trim() != "") {
         document.getElementById("searchResult").removeAttribute("hidden");
         var v = 0;
-        for (var i = 0; i < itemList.length-5; i++) {
+        for (var i = 1; i < itemList.length-5; i++) {
             if (itemList[i].prod_name.toLowerCase().search(document.getElementById("search-box").value.toLowerCase().trim()) >= 0) {
                 document.getElementById("searchResult").innerHTML+=
-                "<div class=\"cart-item\" id=\"searchResult-"+v+"\" onclick=\"modal("+(i+1)+");sfocus();saveForm();\">"+itemList[i].prod_name+"<span style=\"float:right;\">₱"+itemList[i].prod_price+"</span></div>";
+                "<div class=\"cart-item\" id=\"searchResult-"+v+"\" onclick=\"modal("+(i)+");sfocus();saveForm();\">"+itemList[i].prod_name+"<span style=\"float:right;\">₱"+itemList[i].prod_price+"</span></div>";
                 v++;
             }
         }
@@ -603,42 +624,42 @@ function navDisplay(x) {
     const head = document.getElementById("header2");
     switch(x){
         case 1:
-            card_box.innerHTML = createcardset(createset(12,89));
+            card_box.innerHTML = createcardset(createset(12,itemList[0]));
             head.innerHTML = "Welcome to PisayPlex";
             break;
         case 2:
             var v = [];
-            for (var i = 1; i <= 89; i++){v[v.length] = i}
+            for (var i = 1; i <= itemList[0]; i++){v[v.length] = i}
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "All Items";
             break;
         case 3:
-            var v = [29,31,49,50,57,62,63,69,71,72];
+            var v = [29,31,49,50,57,63,64,70,72,73];
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "Clothes";
             break;
         case 4:
-            var v = [10,32,33,34,35,36,37,39,52,53,54,55,64,73,75,84,86,87,88,89];
+            var v = [10,32,33,34,35,36,37,39,52,53,54,55,65,74,76,85,87,88,89,90];
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "Technology";
             break;
         case 5:
-            var v = [1,2,3,11,12,13,14,18,20,21,23,24,27,30,43,44,45,46,47,48,51,61,70,74];
+            var v = [1,2,3,11,12,13,14,18,20,21,23,24,27,30,43,44,45,46,47,48,51,61,71,75];
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "School Supplies";
             break;
         case 6:
-            var v = [16,17,56,59,60,76,83];
+            var v = [16,17,56,59,60,77,84];
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "Supplementary Learning Materials";
             break;
         case 7:
-            var v = [4,5,6,7,8,9,15,19,22,25,26,28,38,40,41,42,58,65,66,67,68,77,78,79,80,81,82,85];
+            var v = [4,5,6,7,8,9,15,19,22,25,26,28,38,40,41,42,58,62,66,67,68,69,78,79,80,81,82,83,84];
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "Dormer Items";
             break;
         case 8:
-            var v = [itemList.length-4,itemList.length-3,itemList.length-2,itemList.length-1,itemList.length];
+            var v = [itemList.length-5,itemList.length-4,itemList.length-3,itemList.length-2,itemList.length-1];
             card_box.innerHTML = createcardset(v);
             head.innerHTML = "About the Company";
             break;
@@ -647,10 +668,10 @@ function navDisplay(x) {
 
 function modal(x) {
     modalitemno = x;
-    document.getElementById('modal-img').setAttribute('src', itemList[x-1].prod_pic[Math.floor(Math.random()*itemList[x-1].prod_pic.length)]);
-    document.getElementById('modal-img').setAttribute('alt', itemList[x-1].prod_name);
-    document.getElementById('item-name').innerHTML = itemList[x-1].prod_name;
-    document.getElementById('item-price').innerHTML = '₱' + itemList[x-1].prod_price;
+    document.getElementById('modal-img').setAttribute('src', itemList[x].prod_pic[Math.floor(Math.random()*itemList[x].prod_pic.length)]);
+    document.getElementById('modal-img').setAttribute('alt', itemList[x].prod_name);
+    document.getElementById('item-name').innerHTML = itemList[x].prod_name;
+    document.getElementById('item-price').innerHTML = '₱' + itemList[x].prod_price;
     modalAppear(true);
 }
 
@@ -672,7 +693,9 @@ function hideSearch (x) {
 var modal1 = true;
 var modal2 = false;
 
+
 function modalSearch (x) {
+    hideSearch(true);
     modal1 = x;
     if (modal2 == false) {
         modal2 = true;
@@ -685,9 +708,9 @@ function modalSearch (x) {
 }
 
 function modalAppear(x){
+    hideSearch(true);
     if(x==true){
         if(modal2==false){document.getElementById('number-box').value = ''}
-        if(hide1==false){hideSearch(true)}
         document.getElementById('modal').style.opacity = '1';
         document.getElementById('modal').style.top = '0vh';
     }else{
@@ -708,12 +731,13 @@ function countDown() {
 }
 
 function resizeInput() {
-    document.getElementById('number-box').style.width = document.getElementById('number-box').value.length + 2 + "ch";
     if(Number(document.getElementById('number-box').value) > 50){document.getElementById('number-box').value = "50"}
     if(Number(document.getElementById('number-box').value) < 0){document.getElementById('number-box').value = "0"}
+    document.getElementById('number-box').style.width = document.getElementById('number-box').value.length + 2 + "ch";
 }
 
 function addToCart() {
+    resizeInput();
     if(Number(document.getElementById('number-box').value) > 0){
         for(var i = 1; i <= Number(document.getElementById('number-box').value); i++){
             addOrder(modalitemno);
@@ -723,11 +747,12 @@ function addToCart() {
 }
 
 function buyNow() {
+    resizeInput();
     if(document.getElementById('cust_addr').value == '' && document.getElementById('cust_email').value == '' && document.getElementById('cust_name').value == ''){alert('Incomplete information. Please fill up information on cart.');}else{
         if(Number(document.getElementById('number-box').value) <= 0){alert('Item Quantity Required')}else{
             var x = [];
             for(var i = 1; i <= Number(document.getElementById('number-box').value); i++){
-                x[x.length] = itemList[modalitemno-1];
+                x[x.length] = itemList[modalitemno];
             }
             document.getElementById("cust_order").setAttribute("value", JSON.stringify(x));
             document.getElementById("submit").click();
@@ -742,6 +767,24 @@ document.addEventListener('keydown', function(event) {
             break;
     }
 });
+
+function centerImage(){
+    document.getElementById('modal-img').style.margin = '0px';
+    document.getElementById('modal-img').style.height = 'auto';
+    document.getElementById('modal-img').style.width = 'auto';
+
+    if(document.getElementById('modal-img').clientWidth >= document.getElementById('modal-img').clientHeight){
+        document.getElementById('modal-img').style.width = '100%';
+        if(document.getElementById('modal-img').clientHeight < document.getElementById('item-image').clientHeight) {
+            document.getElementById('modal-img').style.marginTop = ((document.getElementById('item-image').clientHeight - document.getElementById('modal-img').clientHeight) / 2) + "px";
+        }
+    }else{
+        document.getElementById('modal-img').style.height = '100%';
+        if(document.getElementById('modal-img').clientWidth < document.getElementById('item-image').clientWidth) {
+            document.getElementById('modal-img').style.marginLeft = ((document.getElementById('item-image').clientWidth - document.getElementById('modal-img').clientWidth) / 2) + "px";
+        }
+    }
+}
 
 setTimeout(() => {document.getElementById("search-box").addEventListener('keydown', () => {setTimeout(() => { search() }, 1 );});}, 1);
 

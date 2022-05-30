@@ -7,6 +7,10 @@ body{
     font-weight: bold;
 }
 
+img{
+    user-select: none; 
+}
+
 #header{
     height: 10.417vw;
     background-color: #F1D7A5;
@@ -19,13 +23,13 @@ body{
 }
 
 .card-box{
-    padding: 1.850vw;
+    padding: 5vw;
     margin: auto;
     font-size: 0px;
 }
 
 .card{
-    width: calc(16.66666% - 1.680vw);
+    width: calc(16.66666% - 1.6vw);
     padding: 0.222vw;
     margin: 0.444vw;
     border: 0.074vw solid lightgray;
@@ -35,8 +39,8 @@ body{
 
 .card-img{
     width: 90%;
-    margin: calc(((100vw - 3.701vw) / 6 - 1.480vw) * 0.05);
-    max-height: calc(((100vw - 3.701vw) / 6 - 1.480vw) * 0.9);
+    margin: calc(((100vw - 3.701vw) / 6 - 1.40vw) * 0.05);
+    max-height: calc(((100vw - 3.701vw) / 6 - 1.40vw) * 0.9);
     overflow: hidden;
 }
 
@@ -255,24 +259,28 @@ body{
     padding-top: 10vh;
     padding-bottom: 10vh;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease 0.01s;
     top: -100vh;
     overflow: hidden;
 }
 
 #item-modal{
-    background-color: white;
+    background-color: #F1D7A5;
     width: 80vw;
     height: 40vw;
+    border-radius: 1.480vw;
     overflow: hidden;
 }
 
 #item-image{
+    background-color: #FFF;
     display: inline-block;
     vertical-align: middle;
     width: 50%;
     height: 100%;
     overflow: hidden;
+    margin-right: 1%;
+    padding: 0px;
 }
 
 #item-image>img{
@@ -283,7 +291,7 @@ body{
     display: inline-block;
     vertical-align: middle;
     height: 75%;
-    width: 49%;
+    width: 48%;
 }
 
 #item-name{
@@ -300,25 +308,26 @@ body{
     font-family: inherit;
     font-weight: inherit;
     border: none;
-    background-color: #ddd;
+    background-color: #D4AF8D;
     cursor: pointer;
     text-align: center;
     width: calc(2.5vw + 6px);
     height: calc(2.5vw + 6px);
     vertical-align: top;
+    user-select: none; 
 }
 
 #modal-content>button{
-    width:auto;
-    margin-top: 12vw;
+    width: 18.505vw;
+    margin-top: 3vw;
 }
 
 #add-btn:hover, #minus-btn:hover, #modal-content>button:hover{
-    background-color: #c5c5c5;
+    background-color: #E0BBA4;
 }
 
 #add-btn:active, #minus-btn:active, #modal-content>button:active{
-    background-color: #818181;
+    background-color: #ecd0be;
 }
 
 #number-box{
@@ -327,5 +336,14 @@ body{
     height: 2.5vw;
     text-align: center;
     vertical-align: top;
-    border: 2px solid #ddd;
+    border: 2px solid #E0BBA4;
+	text-align:center;
+	background-color:#E0BBA4;
+}
+
+.empty-cart{
+    font-size:4vw;
+    color:gray;
+    text-align:center;
+    user-select: none;
 }

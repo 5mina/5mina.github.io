@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+	background-color: #FEFBE7;
+}
+
+#header{
+    height: 10.417vw;
+    background-color: #F1D7A5;
+    overflow: hidden;
+	text-align: center;
+}
+
+#header>img{
+    height: 46%;
+    margin-top: 1.25%;
+	margin-left: 2.25%;
+	position:relative;
+}
+
+.card-box{
+    padding: 1.850vw;
+    margin: auto;
+	text-align: center;
+    font-size: 0px;
+}
+
+.card{
+    width: calc(25% - 1.80vw);
+    padding: 0.222vw;
+    margin: 0.444vw;
+    border: 0.074vw solid lightgray;
+    display: inline-block;
+    vertical-align: top;
+	background-color: white;
+	text-align: left;
+}
+
+.card-img{
+    width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: calc(((100vw - 3.701vw) / 4 - 1.680vw) * 0.05);
+	margin-bottom: calc(((100vw - 3.701vw) / 4 - 1.680vw) * 0.05);
+    max-height: calc(((100vw - 3.701vw) / 4 - 1.680vw) * 0.9);
+    overflow: hidden;
+	border: solid 1px lightgray;
+}
+
+.card-img>img{
+    width: 100%;
+}
+
+.card-name{
+    font-size: 2.75vw;
+    word-break: break-word;
+	margin-left: 1vw;
+}
+
+.card-price{
+    word-break: break-word;
+    font-size: 2.5vw;
+    margin-top: 0.3vw;
+	margin-left: 1vw;
+}
+
+.card-button{
+    margin-top: 0.75vw;
+    text-align: right;
+}
+
+.card-button>button{
+    font-size: 2vw;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: #E4D3AF;
+    cursor: pointer;
+    width: 55%;
+    text-align: center;
+}
+
+.card-button>button:hover{
+    background-color: #C6B38A;
+}
+
+.card-button>button:active{
+    background-color: #B2A384;
+}
+
+.form-box{
+    padding: 1.850vw;
+    padding-bottom: 9.252vw;
+    font-size: 0px;
+	text-align: center;
+}
+
+.form, .order-box{
+    width: 45.5%;
+    display: inline-block;
+    vertical-align: top;
+	text-align: left;
+}
+
+.form{
+    margin-left: 2.5%;
+}
+
+.order-box{
+    margin-right: 2.5%;
+}
+
+.form, input {
+    font-size: 2.3vw;
+}
+
+#cust_addr{
+    width: 96.5%;
+}
+
+#cust_name, #cust_email{
+    width: 95%;
+}
+
+.parts{
+    width: 49%;
+    padding: 0px;
+    display: inline-block;
+}
+
+#submit {
+    margin-top: 1.850vw;
+    float: right;
+    margin-right: 1.110vw;
+    cursor: pointer;
+	background-color: #E4D3AF;
+	padding: 1.5%;
+	border: none;
+}
+
+.order-box{
+    background-color: #ececec;
+    height: 22.206vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    font-size: 2vw;
+}
+
+.product-name {
+    font-size: 2.3vw;
+}
+
+.remove-item{
+    color: rgb(184, 0, 0);
+    cursor: pointer;
+    text-decoration: underline solid rgb(184, 0, 0) 1px;
+}
+
+#navbar{
+    height: 4vw;
+	background-color: #F1D7A5;
+    user-select: none;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+
+
+#navbar>div>div{
+    min-width: 35vw;
+    height: 4vw;
+}
+
+#navbar>div>div:active{
+    background-color: #FEFBE7;
+}
+
+#header2{
+    padding: 2vw;
+    padding-bottom: 0px;
+    font-size: 7vw;
+}

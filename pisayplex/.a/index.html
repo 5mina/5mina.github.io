@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pisayplex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pc.css">
+    <link rel="stylesheet" href="../tablet.css" media="screen and (max-width: 770px)">
+    <link rel="stylesheet" href="../phone.css" media="screen and (max-width: 450px)">
+    <script src="../script.js"></script>
+	
+	<script src="https://kit.fontawesome.com/b1537fa2a2.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body onclick="hideSearch(true)">
+    <div id="modal" onclick="modalSearch(true)">
+        <div id="item-modal" onclick="modalSearch(false)">
+            <div id="item-image">
+                <img id="modal-img" src="../pics/hoshi.png" alt="hottie">
+            </div>
+            <div id="modal-content">
+                <div id="item-name"></div>
+                <div id="item-price"></div>
+                <hr>
+                
+				<form onSubmit="search();return false;"><h2 style="font-size:25pt;">Quantity</h2><button id="minus-btn" onclick="countDown()">-</button><input type="number" id= "number-box" name= "number-box" placeholder="0" onkeydown="setTimeout(() => { resizeInput() }, 1);return (event.keyCode!=13);"><button id="add-btn" onclick="countUp()">+</button></form>
+                <button onclick="addToCart()">Add to Cart</button><button onclick="buyNow()" style="margin-left: 0.5vw;">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <div id="header">
+		<img src="../pics/logo.png" height="80" alt="logo">
+		<div id="search-bar">
+			<form>
+				<input type="text" id= "search-box" name= "search-box" placeholder= "Search" pattern="[a-zA-Z0-9\s]" onkeydown="return (event.keyCode!=13);">
+			</form>
+		</div>
+		<div id="searchResult"></div>
+	</div>
+	
+    <div id="navbar">
+        <div>
+            <div class="nav-item cart-item" onclick="navDisplay(1)">Home</div>
+            <div class="nav-item cart-item" onclick="navDisplay(2)">All Items</div>
+            <div class="nav-item cart-item" onclick="navDisplay(3)">Clothes</div>
+            <div class="nav-item cart-item" onclick="navDisplay(4)">Technology</div>
+            <div class="nav-item cart-item" onclick="navDisplay(5)">School Supplies</div>
+            <div class="nav-item cart-item" onclick="navDisplay(6)">Sup. Learning Materials</div>
+            <div class="nav-item cart-item" onclick="navDisplay(7)">Dormer Items</div>
+            <div class="nav-item cart-item" onclick="navDisplay(8)">About</div>
+        </div>
+    </div>
+    <div id="header2"></div>
+	
+	<!--START OF HOME
+	<div>
+		<table class="table1">
+			<tr>
+				<td rowspan="2">
+					<video src="../pics/slideshow.mp4" autoplay loop muted></video>
+				</td>
+				<td>
+					<img src="../pics/mustsee.png" id="taas" height="140" onclick="navDisplay(2)">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<img src="../pics/girlboss.png" id="baba" height="140" onclick="navDisplay(8)">
+				</td>
+			</tr>
+				
+		</table>
+	</div>
+	<br>
+	
+	<div> 
+		<h3 id="categories">CATEGORIES</h3>
+		<table class="table2">
+			<tr>
+				<td><div class="cat"><img src="../pics/catpic1.png" onclick="navDisplay(3)"></div></td>
+				<td><div class="cat"><img src="../pics/catpic2.png" onclick="navDisplay(4)"></div></td>
+				<td><div class="cat"><img src="../pics/catpic3.png" onclick="navDisplay(5)"></div></td>
+				<td><div class="cat"><img src="../pics/catpic4.png" onclick="navDisplay(6)"></div></td>
+				<td><div class="cat"><img src="../pics/catpic5.png" onclick="navDisplay(7)"></div></td>
+			</tr>
+			<tr style="font-size:13pt;">
+				<td class="cap" onclick="navDisplay(3)">Clothes</td>
+				<td class="cap" onclick="navDisplay(4)">Technology</td>
+				<td class="cap" onclick="navDisplay(5)">School Supplies</td>
+				<td class="cap" onclick="navDisplay(6)">Supplementary<br>Learning Materials</td>
+				<td class="cap" onclick="navDisplay(7)">Dormer Items</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<div> 
+		<h3 id="meths">AVAILABLE PAYMENT METHODS</h3>
+		<table class="table3">
+			<tr>
+				<td><div class="pay"><img src="../pics/cod.png" onclick="navDisplay(3)"><br><h2>Cash on Delivery</h2></div></td>
+				<td><div class="pay"><img src="../pics/stipend.png" onclick="navDisplay(4)"><br><h2>Stipend</h2></div></td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<div><h3 id="sells">BEST SELLERS</h3></div>
+	<!--END OF HOME-->
+	
+	
+	<!--START OF ABOUT
+	<br>
+	<h3 class="dev">DEVELOPERS</h3>-->
+	
+    <div class="card-box" id="card-box"></div>
+	<br>
+	
+	<!--CONT OF ABOUT
+	<h3 class="con">CONTRIBUTIONS</h3>
+		<table class="table4">
+			<tr>
+				<td>
+					<div class="cont">
+						Maverick Agbayani
+						<br>
+						<ul>
+							<li>Images</li>
+							<li>Homepage</li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="cont">
+						Xabi Difuntorum
+						<br>
+						<ul>
+							<li>Images</li>
+							<li>About Page</li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="cont">
+						John Paul Tabrilla
+						<br>
+						<ul>
+							<li>Javascript</li>
+							<li>Pages</li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="cont">
+						Eunys Barbon
+						<br>
+						<ul>
+							<li>Layout & Design</li>
+							<li>Pages</li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="cont">
+						Pauleen Guisdan
+						<br>
+						<ul>
+							<li>Layout & Design</li>
+							<li>Modals</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+	<br>
+	<h3 class="ref">REFERENCES</h3>
+		<div> 
+			<table class="table3">
+				<tr>
+					<td><a href="https://shopee.ph/" target="_blank"><div class="refs"><img src="../pics/shopee.png" onclick="navDisplay(3)" alt="afaf"><br></div></a></td>
+					<td><a href="https://docs.google.com/document/d/1WpxSBaiSDTKdyOfgL07W6r7qqIxMo6jw5hipayo6bSA/edit?usp=sharing" target="_blank"><div class="refs"><img src="../pics/sources.png" onclick="navDisplay(4)" alt="afaf"><br></div></a></td>
+				</tr>
+			</table>
+		</div>-->
+	<!--END OF ABOUT-->
+	
+	
+    <hr>
+    <div class="form-box">
+        <div class="order-box" id="order-box"></div>
+        <div class="form"><form method="get" >
+            <div class="parts">
+                <label for="cust_name">Name</label><br>
+                <input type="text" id="cust_name" name="cust_name" pattern="[a-zA-Z.-\s]" onchange="saveForm()" required>
+            </div>
+            <div class="parts">
+                <label for="cust_email">Email</label><br>
+                <input type="text" id="cust_email" name="cust_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onchange="saveForm()" required>
+            </div><br>
+            <label for="cust_addr">Address</label><br>
+            <input type="text" id="cust_addr" name="cust_addr" pattern="[a-zA-Z0-9.-\s]" onchange="saveForm()" required><br>
+            <input type="submit" id="submit" name="submit" value="Checkout" onclick="if(document.getElementById('cust_addr').value != '' && document.getElementById('cust_email').value != '' && document.getElementById('cust_name').value != ''){if(document.getElementById('cust_order').value == ''){alert('No Items In Cart')}}">
+            <input type="text" id="cust_order" name="cust_order" required hidden>
+        </form></div>
+    </div>
+
+    <button id="godown" onclick="window.scrollTo(0, document.body.scrollHeight);"><span class="material-symbols-outlined" style="color:white; font-size:52pt; margin-top:5px;">shopping_cart</span></button>
+	
+	<!--footer-->
+	<div class="footer">
+		<div class="ft div-1" style="text-align: center;">
+			<figure><img src="../pics/logo.png" height="100" width="750" alt="logo" ></figure>
+			<strong style="text-align: center;">thank u, next. thank you, PisayPlex</strong>
+			<div style= "margin-top:10px;">
+			<a href="#"><i class="fa-solid fa-location-dot" style="font-size: 50px; color:black;"></i></a>
+			<a href="#"><i class="fa-solid fa-phone" style="font-size: 50px; color:black;"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram" style="font-size: 58px; color:black;"></i></a>
+			<a href="#"><i class="fa-brands fa-facebook-square" style="font-size: 58px; color:black;"></i></a>
+			<a href="#"><i class="fa-brands fa-twitter" style="font-size: 58px; color:black;"></i></a>
+			</div>
+		</div>
+		<div class="ft div-2" style="text-align: center; margin-top:10px;">
+			Site Navigation
+			<ul>
+				<li><a href="#" onclick="navDisplay(1)">Home</a></li>
+				<li><a href="#" onclick="navDisplay(8)">About</a></li>
+				<li><a href="#" onclick="navDisplay(3)">Clothes</a></li>
+				<li><a href="#" onclick="navDisplay(4)">Technology</a></li>
+				<li><a href="#" onclick="navDisplay(5)">Stationary</a></li>
+				<li><a href="#" onclick="navDisplay(6)">Supplementary Learning Materials</a></li>
+				<li><a href="#" onclick="navDisplay(7)">Dormer Items</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

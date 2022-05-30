@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+    margin: auto;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+	background-color: #FEFBE7;
+}
+
+#header{
+    height: 10.417vw;
+    background-color: #F1D7A5;
+    overflow: hidden;
+	text-align: center;
+}
+
+#header>img{
+    height: 46%;
+    margin-top: 1.25%;
+	margin-left: 2.25%;
+	position:relative;
+}
+
+.card-box{
+    padding: 1.850vw;
+    margin: auto;
+	text-align: center;
+    font-size: 0px;
+}
+
+.card{
+    width: calc(14.66666% - 1.680vw);
+    padding: 0.222vw;
+    margin: 0.444vw;
+    border: 0.074vw solid lightgray;
+    display: inline-block;
+    vertical-align: top;
+	background-color: white;
+	text-align: left;
+}
+
+.card-img{
+    width: 90%;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: calc(((100vw - 3.701vw) / 6 - 1.480vw) * 0.05);
+	margin-bottom: calc(((100vw - 3.701vw) / 6 - 1.480vw) * 0.05);
+    max-height: calc(((100vw - 3.701vw) / 6 - 1.480vw) * 0.9);
+    overflow: hidden;
+	border: solid 1px lightgray;
+}
+
+.card-img>img{
+    width: 100%;
+}
+
+.card-name{
+    font-size: 1.4vw;
+    word-break: break-word;
+	margin-left: 1vw;
+}
+
+.card-price{
+    word-break: break-word;
+    font-size: 1.2vw;
+    margin-top: 0.3vw;
+	margin-left: 1vw;
+}
+
+.card-button{
+    margin-top: 0.75vw;
+    text-align: right;
+}
+
+.card-button>button{
+    font-size: 1.2vw;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: #E4D3AF;
+    cursor: pointer;
+    width: 55%;
+    text-align: center;
+}
+
+.card-button>button:hover{
+    background-color: #C6B38A;
+}
+
+.card-button>button:active{
+    background-color: #B2A384;
+}
+
+.form-box{
+    padding: 1.850vw;
+    padding-bottom: 9.252vw;
+    font-size: 0px;
+	text-align: center;
+}
+
+.form, .order-box{
+    width: 45.5%;
+    display: inline-block;
+    vertical-align: top;
+	text-align: left;
+}
+
+.form{
+    margin-left: 2.5%;
+}
+
+.order-box{
+    margin-right: 2.5%;
+}
+
+.form,input {
+    font-size: 1.480vw;
+}
+
+#cust_addr{
+    width: 96.5%;
+}
+
+#cust_name, #cust_email{
+    width: 95%;
+}
+
+.parts{
+    width: 49%;
+    padding: 0px;
+    display: inline-block;
+}
+
+#submit {
+    margin-top: 1.850vw;
+    float: right;
+    margin-right: 1.110vw;
+    cursor: pointer;
+	background-color: #E4D3AF;
+	padding: 1.5%;
+	border: none;
+}
+
+.order-box{
+    background-color: #ececec;
+    height: 22.206vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cart-item {
+    font-size: 1.110vw;
+}
+
+.product-name {
+    font-size: 1.332vw;
+}
+
+.remove-item{
+    color: rgb(184, 0, 0);
+    cursor: pointer;
+    text-decoration: underline solid rgb(184, 0, 0) 1px;
+}
+
+#godown{
+    position: fixed;
+    bottom: 2vw;
+    right: 1.7vw;
+    font-size: 1.480vw;
+    cursor: pointer;
+	border-radius: 50%;
+	text-align: center;
+	padding: 1%;
+	border: none;
+	background-color: #B49776;
+}
+
+#search-bar{
+    background-color: #F1D7A5;
+	margin-top: 1vw;
+	padding-bottom: 0.2vw;
+}
+
+#search-box{
+    width: calc(70vw - 14px);
+    padding: 5px;
+}
+
+#searchResult{
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    max-height: 35vh;
+    overflow-y: scroll;
+    word-break: break-word;
+    border-bottom: 2px solid darkgray;
+    user-select: none;
+	text-align: left;
+}
+
+#searchResult>div{
+    width: calc((100vw - 36.5px) / 2);
+    display: inline-block;
+    border: 1px solid darkgray;
+    background-color: white;
+    padding: 3px;
+}
+
+#navbar{
+    background-color: #F1D7A5;
+    user-select: none;
+    height: 2.25vw;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#navbar>div{
+    display: flex;
+}
+
+#navbar>div>div{
+    flex: 1;
+    padding: 0px;
+    min-width: 10vw;
+    height: 2vw;
+    text-align: center;
+    background-color: #F1D7A5;
+    padding-top: 0.5vw;
+    padding-right: 0.2vw;
+    padding-left: 0.2vw;
+    cursor: pointer;
+	transition: 0.3s;
+}
+
+#navbar>div>div:hover{
+    background-color: #d8ba83;
+}
+
+#navbar>div>div:active{
+    background-color: #FEFBE7;
+}
+
+#header2{
+    padding: 1vw;
+    padding-bottom: 0px;
+    font-size: 3vw;
+	margin-left: 7.6%;
+	margin-top: 0.5%;
+	margin-bottom: 0.3%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0.75vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
+
+#modal{
+    z-index: 100;
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    top: -100vh;
+    overflow: hidden;
+}
+
+#item-modal{
+    background-color: white;
+    width: 80vw;
+    height: 40vw;
+    overflow: hidden;
+}
+
+#item-image{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 100%;
+}
+
+#item-image>img{
+    width: 100%;
+}
+
+#modal-content{
+    display: inline-block;
+    vertical-align: middle;
+    height: 75%;
+    width: 49%;
+}
+
+#item-name{
+    font-size: 4vw;
+    word-break: break-word;
+}
+
+#item-price{
+    font-size: 2.5vw;
+}
+
+#add-btn, #minus-btn, #modal-content>button{
+    font-size: 2vw;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    text-align: center;
+    width: calc(2.5vw + 6px);
+    height: calc(2.5vw + 6px);
+    vertical-align: top;
+}
+
+#modal-content>button{
+    width:auto;
+    margin-top: 12vw;
+}
+
+#add-btn:hover, #minus-btn:hover, #modal-content>button:hover{
+    background-color: #c5c5c5;
+}
+
+#add-btn:active, #minus-btn:active, #modal-content>button:active{
+    background-color: #818181;
+}
+
+#number-box{
+    font-size: 2vw;
+    width: 3ch;
+    height: 2.5vw;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #ddd;
+}
+
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA START NG MGA DINAGDAG NI EUNYS NA CSS (btw dapat nasa home lang mga toh)*/
+.table1 {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #EFE7D0;
+	padding-left: 6.5%;
+	padding-right: 6.5%;
+	text-align:center;
+	border-spacing: 50px 10px;
+}
+
+#taas, #baba {
+	cursor: pointer;
+}
+
+.table2 {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #EFE7D0;
+	padding-left: 4.5%;
+	padding-right: 4.5%;
+	text-align:center;
+	border-spacing: 30px 8px;
+}
+
+#categories{
+    padding: 1vw;
+    padding-bottom: 0px;
+    font-size: 1.8vw;
+	margin-left: 15.5%;
+	margin-top: 0.5%;
+	margin-bottom: 0.3%;
+}
+
+.table2>tr, .table2>td {
+	text-align:center;
+}
+
+.cat {
+	background-color: white;
+	border-radius: 5px;
+	width: 9vw;
+	padding: 6%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.cat:hover {
+	background-color: #C8C8C8;
+}
+
+.cat>img {
+	height: 4vw;
+}
+
+.cap {
+	color: black;
+	cursor: pointer;
+}
+
+.cap:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+#meths{
+    padding: 1vw;
+    padding-bottom: 0px;
+    font-size: 1.8vw;
+	margin-left: 15.5%;
+	margin-top: 0.5%;
+	margin-bottom: 0.3%;
+}
+
+.table3 {
+	margin-left:auto;
+	margin-right:auto;
+	padding-left: 4.5%;
+	padding-right: 4.5%;
+	text-align:center;
+	border-spacing: 30px 8px;
+}
+
+.pay {
+	background-color: #EFE6C6;
+	text-align: center;
+	width: 32vw;
+	padding: 0.1vw;
+}
+
+.pay>img {
+	height: 10vw;
+}
+
+#sells{
+    padding-bottom: 0px;
+    font-size: 1.8vw;
+	margin-left: 9%;
+	margin-top: 1%;
+	margin-bottom:-20px;
+}
+/*BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB END NG MGA DINAGDAG NI EUNYS NA CSS (btw dapat nasa home lang mga toh)*/
+
+#modal{
+    z-index: 100;
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    opacity: 0;
+    transition: opacity 0.2s ease 0.01s;
+    top: -100vh;
+    overflow: hidden;
+}
+
+#item-modal{
+    background-color: #F1D7A5;
+    width: 80vw;
+    height: 40vw;
+    border-radius: 1.480vw;
+    overflow: hidden;
+}
+
+#item-image{
+    background-color: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 1%;
+    padding: 0px;
+}
+
+#item-image>img{
+    width: 100%;
+}
+
+#modal-content{
+    display: inline-block;
+    vertical-align: middle;
+    height: 75%;
+    width: 48%;
+}
+
+#item-name{
+    font-size: 4vw;
+    word-break: break-word;
+}
+
+#item-price{
+    font-size: 2.5vw;
+}
+
+#add-btn, #minus-btn, #modal-content>button{
+    font-size: 2vw;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: #D4AF8D;
+    cursor: pointer;
+    text-align: center;
+    width: calc(2.5vw + 6px);
+    height: calc(2.5vw + 6px);
+    vertical-align: top;
+    user-select: none; 
+}
+
+#minus-btn {
+	margin: 0px;
+}
+
+#modal-content>button{
+    width: 18.505vw;
+    margin-top: 3vw;
+}
+
+#add-btn:hover, #minus-btn:hover, #modal-content>button:hover{
+    background-color: #E0BBA4;
+}
+
+#add-btn:active, #minus-btn:active, #modal-content>button:active{
+    background-color: #ecd0be;
+}
+
+#number-box{
+    font-size: 2vw;
+    width: 3ch;
+    height: 2.5vw;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #E0BBA4;
+	text-align:center;
+	background-color:#E0BBA4;
+}
+
+.empty-cart{
+    font-size:4vw;
+    color:gray;
+    text-align:center;
+    user-select: none;
+}
+
+.table4 {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #EFE7D0;
+	padding-left: 4.5%;
+	padding-right: 4.5%;
+	text-align:center;
+	border-spacing: 30px 8px;
+}
+
+.cont {
+	background-color: white;
+	width: 11vw;
+	padding: 6%;
+	font-size: 1.2vw;
+}
+
+.cont ul {
+	text-align: left;
+	font-size: 1vw;
+}
+
+.dev {
+    padding-bottom: 0px;
+    font-size: 1.8vw;
+	margin-left: 8.8%;
+	margin-top: 1%;
+	margin-bottom:-20px;
+}
+
+.con {
+	padding-bottom: 0px;
+    font-size: 1.8vw;
+	margin-left: 12%;
+	margin-top: 1%;
+	margin-bottom:-2px;
+}
+
+.ref {
+	padding-bottom: 0px;
+    font-size: 1.8vw;
+	margin-left: 17%;
+	margin-top: 1%;
+	margin-bottom:-2px;
+}
+
+.refs {
+	background-color: #EFE6C6;
+	text-align: center;
+	width: 32vw;
+	padding: 0.1vw;
+}
+
+.refs>img {
+	height: 7vw;
+}
+
+/*--------------------------------*/
+
+div.footer {
+    padding-top: 25px;
+    height: auto;
+    background-color: #D4AF8D;
+}
+
+div.footer figure {
+    margin: 0px;
+    position: relative;
+    left: -3px;
+}
+
+.div-1{
+	border-right:2px solid black;
+	padding: 15px;
+	padding-right: 35px;
+	font-size: 30px;
+}
+
+.div-2>ul {
+    font-size: 16px;
+    position: relative;
+    list-style: none;
+    
+}
+
+.div-2 {
+    margin-top:10px;
+	font-size: 30px;
+}
+
+.div-2 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.div-2 a:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width:360px){
+    div.footer{
+        padding: 0px;
+		height:500px;
+    }
+	
+	div.footer img {
+        width: 340px;
+    }
+	
+	.div-1 {
+		padding-right:15px;
+		font-size:15pt;
+	}
+	
+	.div-2 ul {
+		padding:0px;
+	}
+}
+
+@media only screen and (min-width:768px){
+    div.footer{
+		height: 500px;
+        padding-left: 25px;
+    }
+	
+	div.footer img {
+        height: 145px;
+		width: 720px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    div.footer{
+        height: 300px;
+    }
+    
+    div.footer .ft{
+        display: inline-block;
+    }
+    
+    .ft:not(:first-child) {
+        width: 32%;
+        margin-left: 55px;
+    }   
+    
+    .div-2 {
+            margin-top: 0px;
+    }
+} 
+
+@media only screen and (min-width:1260px){
+    div.footer {
+        height: 300px;
+    }
+
+    div.footer img {
+        height: 155px;
+    }
+    
+    .ft:not(:first-child) {
+        width: 38%;
+        margin-left: 45px;
+    }
+
+    .div-1,
+    .div-2,
+    .div-3 {
+        font-size: 30px;
+    }
+
+    .div-2>ul,
+    .div-3>ul {
+        font-size: 20px;
+        left: -28px;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    div.footer {
+        height: 350px;
+    }
+
+    div.footer img {
+        height: 180px;
+    }
+
+    .ft:not(:first-child) {
+        width: 38%;
+        margin-left: 55px;
+    }
+
+    .div-1,
+    .div-2{
+        font-size: 35px;
+    }
+
+    .div-2>ul{
+        font-size: 26px;
+        left: -28px;
+    }
+}
