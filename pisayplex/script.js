@@ -709,7 +709,7 @@ function countDown() {
 
 function resizeInput() {
     document.getElementById('number-box').style.width = document.getElementById('number-box').value.length + 2 + "ch";
-    if(Number(document.getElementById('number-box').value) > 250){document.getElementById('number-box').value = "250"}
+    if(Number(document.getElementById('number-box').value) > 50){document.getElementById('number-box').value = "50"}
     if(Number(document.getElementById('number-box').value) < 0){document.getElementById('number-box').value = "0"}
 }
 
