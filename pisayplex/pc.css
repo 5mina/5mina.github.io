@@ -158,13 +158,15 @@ body{
 }
 
 #search-box{
-    width: calc(100% - 14px);
+    width: calc(100vw - 24px);
     padding: 5px;
 }
 
 #searchResult{
+    position: absolute;
+    z-index: 5;
     cursor: pointer;
-    max-height: 50vh;
+    max-height: 35vh;
     overflow-y: scroll;
     word-break: break-word;
     border-bottom: 2px solid darkgray;
@@ -172,7 +174,8 @@ body{
 }
 
 #searchResult>div{
-    width: calc(100% - 8px);
+    width: calc((100vw - 36.5px) / 2);
+    display: inline-block;
     border: 1px solid darkgray;
     background-color: white;
     padding: 3px;
@@ -228,4 +231,88 @@ body{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #b1b1b1;
+}
+
+#modal{
+    z-index: 100;
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    top: -100vh;
+    overflow: hidden;
+}
+
+#item-modal{
+    background-color: white;
+    width: 80vw;
+    height: 40vw;
+    overflow: hidden;
+}
+
+#item-image{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 100%;
+}
+
+#item-image>img{
+    width: 100%;
+}
+
+#modal-content{
+    display: inline-block;
+    vertical-align: middle;
+    height: 75%;
+    width: 49%;
+}
+
+#item-name{
+    font-size: 4vw;
+    word-break: break-word;
+}
+
+#item-price{
+    font-size: 2.5vw;
+}
+
+#add-btn, #minus-btn, #modal-content>button{
+    font-size: 2vw;
+    font-family: inherit;
+    font-weight: inherit;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    text-align: center;
+    width: calc(2.5vw + 6px);
+    height: calc(2.5vw + 6px);
+    vertical-align: top;
+}
+
+#modal-content>button{
+    width:auto;
+    margin-top: 12vw;
+}
+
+#add-btn:hover, #minus-btn:hover, #modal-content>button:hover{
+    background-color: #c5c5c5;
+}
+
+#add-btn:active, #minus-btn:active, #modal-content>button:active{
+    background-color: #818181;
+}
+
+#number-box{
+    font-size: 2vw;
+    width: 3ch;
+    height: 2.5vw;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #ddd;
 }

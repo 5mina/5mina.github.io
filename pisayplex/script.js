@@ -1,494 +1,495 @@
+var modalitemno = 0;
 var orderArray = [];
 const itemList = [
     {
         prod_name: "G8 AdTech Set",
         prod_price: 450,
-        prod_pic: "../pics/adtech_g8.jpg"
+        prod_pic: ["../pics/adtech_g8.png"]
     },
     {
         prod_name: "General AdTech Set",
         prod_price: 550,
-        prod_pic: "../pics/adtech_gen.jpg"
+        prod_pic: ["../pics/adtech_gen.png"]
     },
     {
         prod_name: "Ballpen",
         prod_price: 15,
-        prod_pic: "../pics/pen.jpg"
+        prod_pic: ["../pics/pen.png"]
     },
     {
         prod_name: "Fita",
         prod_price: 12,
-        prod_pic: "../pics/fita.jpg"
+        prod_pic: ["../pics/fita.png"]
     },
     {
         prod_name: "Hansel",
         prod_price: 10,
-        prod_pic: "../pics/hansel.jpg"
+        prod_pic: ["../pics/hansel.png"]
     },
     {
         prod_name: "Hi-ro",
         prod_price: 8,
-        prod_pic: "../pics/hiro.jpg"
+        prod_pic: ["../pics/hiro.png"]
     },
     {
         prod_name: "Rebisco",
         prod_price: 10,
-        prod_pic: "../pics/rebisco.jpg"
+        prod_pic: ["../pics/rebisco.png"]
     },
     {
         prod_name: "Skyflakes",
         prod_price: 10,
-        prod_pic: "../pics/skyflakes.jpg"
+        prod_pic: ["../pics/skyflakes.png"]
     },
     {
         prod_name: "Whatta Tops",
         prod_price: 9,
-        prod_pic: "../pics/whatta_tops.jpg"
+        prod_pic: ["../pics/whatta_tops.png"]
     },
     {
         prod_name: "Bluetooth Earphones",
         prod_price: 800,
-        prod_pic: "../pics/bt_earphones.jpg"
+        prod_pic: ["../pics/bt_earphones.png"]
     },
     {
         prod_name: "A4 Bond Paper (30pcs)",
         prod_price: 40,
-        prod_pic: "../pics/bondp_a4.jpg"
+        prod_pic: ["../pics/bondp_a4.png"]
     },
     {
         prod_name: "Long Bond Paper (30pcs)",
         prod_price: 40,
-        prod_pic: "../pics/bondp_long.jpg"
+        prod_pic: ["../pics/bondp_long.png"]
     },
     {
         prod_name: "Short Bond Paper (30pcs)",
         prod_price: 40,
-        prod_pic: "../pics/bondp_short.jpg"
+        prod_pic: ["../pics/bondp_short.png"]
     },
     {
         prod_name: "Book (Soft Copy)",
         prod_price: 150,
-        prod_pic: "../pics/book.jpg"
+        prod_pic: ["../pics/book.png"]
     },
     {
         prod_name: "Broom and Dustpan Set",
         prod_price: 175,
-        prod_pic: "../pics/broom_dustpan.jpg"
+        prod_pic: ["../pics/broom_dustpan.png"]
     },
     {
         prod_name: "Canva Poster Templates",
         prod_price: 75,
-        prod_pic: "../pics/poster.jpg"
+        prod_pic: ["../pics/poster.png"]
     },
     {
         prod_name: "Canva Presentation Templates",
         prod_price: 75,
-        prod_pic: "../pics/presentation.jpg"
+        prod_pic: ["../pics/presentation.png"]
     },
     {
         prod_name: "Clipboard",
         prod_price: 50,
-        prod_pic: "../pics/clipboard.jpg"
+        prod_pic: ["../pics/clipboard.png"]
     },
     {
         prod_name: "3-in-1 Coffee",
         prod_price: 25,
-        prod_pic: "../pics/coffee.jpg"
+        prod_pic: ["../pics/coffee.png"]
     },
     {
         prod_name: "Colored Pencils (24 Color Set)",
         prod_price: 100,
-        prod_pic: "../pics/colored_pencils.jpg"
+        prod_pic: ["../pics/colored_pencils.png"]
     },
     {
         prod_name: "Correction Tape",
         prod_price: 35,
-        prod_pic: "../pics/correction_tape.jpg"
+        prod_pic: ["../pics/correction_tape.png"]
     },
     {
         prod_name: "Dormer Pajama Set",
         prod_price: 230,
-        prod_pic: "../pics/pajamas.jpg"
+        prod_pic: ["../pics/pajamas.png"]
     },
     {
         prod_name: "Envelopes (15pcs)",
         prod_price: 90,
-        prod_pic: "../pics/envelopes.jpg"
+        prod_pic: ["../pics/envelopes.png"]
     },
     {
         prod_name: "Eraser (3pcs)",
         prod_price: 60,
-        prod_pic: "../pics/eraser.jpg"
+        prod_pic: ["../pics/eraser.png"]
     },
     {
         prod_name: "Feminine Hygiene Products",
         prod_price: 150,
-        prod_pic: "../pics/fem_hygiene.jpg"
+        prod_pic: ["../pics/fem_hygiene.png"]
     },
     {
         prod_name: "Floor Mat",
         prod_price: 20,
-        prod_pic: "../pics/mat.jpg"
+        prod_pic: ["../pics/mat.png"]
     },
     {
         prod_name: "Highlighter (5 Color Set)",
         prod_price: 125,
-        prod_pic: "../pics/highlighter.jpg"
+        prod_pic: ["../pics/highlighter.png"]
     },
     {
         prod_name: "Hotel Slippers",
         prod_price: 60,
-        prod_pic: "../pics/hotel_slippers.jpg"
+        prod_pic: ["../pics/hotel_slippers.png"]
     },
     {
         prod_name: "ID Lace",
         prod_price: 100,
-        prod_pic: "../pics/id_lace.jpg"
+        prod_pic: ["../pics/id_lace.png"]
     },
     {
         prod_name: "Index Cards (30pcs)",
         prod_price: 30,
-        prod_pic: "../pics/index_cards.jpg"
+        prod_pic: ["../pics/index_cards.png"]
     },
     {
         prod_name: "Lab Gown",
         prod_price: 500,
-        prod_pic: "../pics/lab_gown.jpg"
+        prod_pic: ["../pics/lab_gown.png"]
     },
     {
         prod_name: "Laptop",
         prod_price: 40000,
-        prod_pic: "../pics/laptop.jpg"
+        prod_pic: ["../pics/laptop.png"]
     },
     {
         prod_name: "Globe Load (500)",
         prod_price: 500,
-        prod_pic: "../pics/load_globe.jpg"
+        prod_pic: ["../pics/load_globe.png"]
     },
     {
         prod_name: "Smart Load (500)",
         prod_price: 500,
-        prod_pic: "../pics/load_smart.jpg"
+        prod_pic: ["../pics/load_smart.png"]
     },
     {
         prod_name: "Sun Load (500)",
         prod_price: 500,
-        prod_pic: "../pics/load_sun.jpg"
+        prod_pic: ["../pics/load_sun.png"]
     },
     {
         prod_name: "TM Load (500)",
         prod_price: 500,
-        prod_pic: "../pics/load_tm.jpg"
+        prod_pic: ["../pics/load_tm.png"]
     },
     {
         prod_name: "TNT Load (500)",
         prod_price: 500,
-        prod_pic: "../pics/load_tnt.jpg"
+        prod_pic: ["../pics/load_tnt.png"]
     },
     {
         prod_name: "Lysol",
         prod_price: 200,
-        prod_pic: "../pics/lysol.jpg"
+        prod_pic: ["../pics/lysol.png"]
     },
     {
         prod_name: "USB Microphone",
         prod_price: 250,
-        prod_pic: "../pics/mic.jpg"
+        prod_pic: ["../pics/mic.png"]
     },
     {
         prod_name: "Mop",
         prod_price: 900,
-        prod_pic: "../pics/mop.jpg"
+        prod_pic: ["../pics/mop.png"]
     },
     {
         prod_name: "Mouthwash",
         prod_price: 50,
-        prod_pic: "../pics/mouthwash.jpg"
+        prod_pic: ["../pics/mouthwash.png"]
     },
     {
         prod_name: "Cup Noodles",
         prod_price: 25,
-        prod_pic: "../pics/noodles.jpg"
+        prod_pic: ["../pics/noodles.png"]
     },
     {
         prod_name: "1/4 Pad Paper",
         prod_price: 20,
-        prod_pic: "../pics/1_4_pad.jpg"
+        prod_pic: ["../pics/1_4_pad.png"]
     },
     {
         prod_name: "Crosswise Pad Paper",
         prod_price: 20,
-        prod_pic: "../pics/cwise_pad.jpg"
+        prod_pic: ["../pics/cwise_pad.png"]
     },
     {
         prod_name: "Intermediate Pad Paper",
         prod_price: 30,
-        prod_pic: "../pics/intermediate_pad.jpg"
+        prod_pic: ["../pics/intermediate_pad.png"]
     },
     {
         prod_name: "Lengthwise Pad Paper",
         prod_price: 20,
-        prod_pic: "../pics/lwise_pad.jpg"
+        prod_pic: ["../pics/lwise_pad.png"]
     },
     {
         prod_name: "Yellow Pad Paper",
         prod_price: 60,
-        prod_pic: "../pics/yellow_pad.jpg"
+        prod_pic: ["../pics/yellow_pad.png"]
     },
     {
         prod_name: "Paperclips (25pcs)",
         prod_price: 30,
-        prod_pic: "../pics/paperclips.jpg"
+        prod_pic: ["../pics/paperclips.png"]
     },
     {
         prod_name: "PE Uniform Pants",
         prod_price: 350,
-        prod_pic: "../pics/pe_pants.jpg"
+        prod_pic: ["../pics/pe_pants.png"]
     },
     {
         prod_name: "PE Uniform Shirt",
         prod_price: 350,
-        prod_pic: "../pics/pe_shirt.jpg"
+        prod_pic: ["../pics/pe_shirt.png"]
     },
     {
         prod_name: "Pencils (8pcs)",
         prod_price: 80,
-        prod_pic: "../pics/pencils.jpg"
+        prod_pic: ["../pics/pencils.png"]
     },
     {
         prod_name: "Phone Charger",
         prod_price: 80,
-        prod_pic: "../pics/charger.jpg"
+        prod_pic: ["../pics/charger.png"]
     },
     {
         prod_name: "Globe Pocket Wifi",
         prod_price: 800,
-        prod_pic: "../pics/wifi_globe.jpg"
+        prod_pic: ["../pics/wifi_globe.png"]
     },
     {
         prod_name: "Smart Pocket Wifi",
         prod_price: 500,
-        prod_pic: "../pics/wifi_smart.jpg"
+        prod_pic: ["../pics/wifi_smart.png"]
     },
     {
         prod_name: "Sun Pocket Wifi",
         prod_price: 1500,
-        prod_pic: "../pics/wifi_sun.jpg"
+        prod_pic: ["../pics/wifi_sun.png"]
     },
     {
         prod_name: "Printed Notes",
         prod_price: 500,
-        prod_pic: "../pics/notes.jpg"
+        prod_pic: ["../pics/notes.png"]
     },
     {
         prod_name: "Protective Equipment",
         prod_price: 450,
-        prod_pic: "../pics/protective_equipment.jpg"
+        prod_pic: ["../pics/protective_equipment.png"]
     },
     {
         prod_name: "Rags (4pcs)",
         prod_price: 200,
-        prod_pic: "../pics/rags.jpg"
+        prod_pic: ["../pics/rags.png"]
     },
     {
         prod_name: "College Review Booklets",
         prod_price: 500,
-        prod_pic: "../pics/col_review.jpg"
+        prod_pic: ["../pics/col_review.png"]
     },
     {
         prod_name: "Competition Review Booklets",
         prod_price: 500,
-        prod_pic: "../pics/comp_review.jpg"
+        prod_pic: ["../pics/comp_review.png"]
     },
     {
         prod_name: "Ruler Set",
         prod_price: 45,
-        prod_pic: "../pics/rulers.jpg"
+        prod_pic: ["../pics/rulers.png"]
     },
     {
         prod_name: "School Uniform Blouse & Skirt",
         prod_price: 250,
-        prod_pic: "../pics/uniform_bs.jpg"
+        prod_pic: ["../pics/uniform_bs.png"]
     },
     {
         prod_name: "School Uniform Polo & Pants",
         prod_price: 250,
-        prod_pic: "../pics/uniform_pp.jpg"
+        prod_pic: ["../pics/uniform_pp.png"]
     },
     {
         prod_name: "Scientific Calculator",
         prod_price: 1000,
-        prod_pic: "../pics/scical.jpg"
+        prod_pic: ["../pics/scical.png"]
     },
     {
         prod_name: "Shampoo & Conditioner",
         prod_price: 150,
-        prod_pic: "../pics/shampoo_conditioner.jpg"
+        prod_pic: ["../pics/shampoo_conditioner.png"]
     },
     {
         prod_name: "Skincare Products Set",
         prod_price: 750,
-        prod_pic: "../pics/skincare.jpg"
+        prod_pic: ["../pics/skincare.png"]
     },
     {
         prod_name: "Slippers",
         prod_price: 80,
-        prod_pic: "../pics/slippers.jpg"
+        prod_pic: ["../pics/slippers.png"]
     },
     {
         prod_name: "Dove Soap",
         prod_price: 150,
-        prod_pic: "../pics/soap.jpg"
+        prod_pic: ["../pics/soap.png"]
     },
     {
         prod_name: "Sports Attire",
         prod_price: 500,
-        prod_pic: "../pics/sports_attire.jpg"
+        prod_pic: ["../pics/sports_attire.png"]
     },
     {
         prod_name: "Stapler",
         prod_price: 50,
-        prod_pic: "../pics/stapler.jpg"
+        prod_pic: ["../pics/stapler.png"]
     },
     {
         prod_name: "Summer Uniform Boys",
         prod_price: 500,
-        prod_pic: "../pics/sum_uniform_b.jpg"
+        prod_pic: ["../pics/sum_uniform_b.png"]
     },
     {
         prod_name: "Summer Uniform Girls",
         prod_price: 500,
-        prod_pic: "../pics/sum_uniform_g.jpg"
+        prod_pic: ["../pics/sum_uniform_g.png"]
     },
     {
         prod_name: "Tablet + Stylus",
         prod_price: 2500,
-        prod_pic: "../pics/tablet.jpg"
+        prod_pic: ["../pics/tablet.png"]
     },
     {
         prod_name: "Scotch Tape",
         prod_price: 25,
-        prod_pic: "../pics/tape.jpg"
+        prod_pic: ["../pics/tape.png"]
     },
     {
         prod_name: "Tesla",
         prod_price: 2500000,
-        prod_pic: "../pics/tesla.jpg"
+        prod_pic: ["../pics/tesla.png"]
     },
     {
         prod_name: "Test Reviewer",
         prod_price: 200,
-        prod_pic: "../pics/test.jpg"
+        prod_pic: ["../pics/test.png"]
     },
     {
         prod_name: "Tissue Roll",
         prod_price: 20,
-        prod_pic: "../pics/tissue.jpg"
+        prod_pic: ["../pics/tissue.png"]
     },
     {
         prod_name: "Toilet Cleanser",
         prod_price: 200,
-        prod_pic: "../pics/toilet_cleanser.jpg"
+        prod_pic: ["../pics/toilet_cleanser.png"]
     },
     {
         prod_name: "Toilet Scrubber",
         prod_price: 50,
-        prod_pic: "../pics/toilet_scrubber.jpg"
+        prod_pic: ["../pics/toilet_scrubber.png"]
     },
     {
         prod_name: "Toothbrush & Toothpaste Set",
         prod_price: 125,
-        prod_pic: "../pics/tooth_set.jpg"
+        prod_pic: ["../pics/tooth_set.png"]
     },
     {
         prod_name: "Body Towel",
         prod_price: 80,
-        prod_pic: "../pics/towel_b.jpg"
+        prod_pic: ["../pics/towel_b.png"]
     },
     {
         prod_name: "Face Towel",
         prod_price: 30,
-        prod_pic: "../pics/towel_f.jpg"
+        prod_pic: ["../pics/towel_f.png"]
     },
     {
         prod_name: "Tutoring/Consultation Service (per Hour)",
         prod_price: 250,
-        prod_pic: "../pics/tutor.jpg"
+        prod_pic: ["../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor.png","../pics/tutor (2).png"]
     },
     {
         prod_name: "USB Webcam",
         prod_price: 450,
-        prod_pic: "../pics/cam.jpg"
+        prod_pic: ["../pics/cam.png"]
     },
     {
         prod_name: "Wipes",
         prod_price: 200,
-        prod_pic: "../pics/wipes.jpg"
+        prod_pic: ["../pics/wipes.png"]
     },
     {
         prod_name: "Wired Earphones",
         prod_price: 300,
-        prod_pic: "../pics/wr_earphones.jpg"
+        prod_pic: ["../pics/wr_earphones.png"]
     },
     {
         prod_name: "Wired Mouse",
         prod_price: 300,
-        prod_pic: "../pics/wr_mouse.jpg"
+        prod_pic: ["../pics/wr_mouse.png"]
     },
     {
         prod_name: "Wireless Keyboard",
         prod_price: 500,
-        prod_pic: "../pics/wrls_keyboard.jpg"
+        prod_pic: ["../pics/wrls_keyboard.png"]
     },
     {
         prod_name: "Wireless Mouse",
         prod_price: 300,
-        prod_pic: "../pics/wrls_mouse.jpg"
+        prod_pic: ["../pics/wrls_mouse.png"]
     },
     {
         prod_name: "Hoshi Kwon",
         prod_price: 15000000,
-        prod_pic: "../pics/hoshi.jpg"
+        prod_pic: ["../pics/hoshi.png"]
     },
     {
         prod_name: "Kwon Soonyoung",
         prod_price: 15000000,
-        prod_pic: "../pics/soonyoung.jpg"
+        prod_pic: ["../pics/soonyoung.png"]
     },
     {
         prod_name: "Changmin Ji",
         prod_price: 15000000,
-        prod_pic: "../pics/q.jpg"
+        prod_pic: ["../pics/q.png"]
     },
     {
         prod_name: "Juyeon + Q",
         prod_price: 30000000,
-        prod_pic: "../pics/jukyu.jpg"
+        prod_pic: ["../pics/jukyu.png"]
     },
     {
         prod_name: "Maverick Agbayani",
         prod_price: 1000000,
-        prod_pic: "../pics/agbayani.jpg"
+        prod_pic: ["../pics/agbayani.png"]
     },
     {
         prod_name: "Xabi Difuntorum",
         prod_price: 1000000,
-        prod_pic: "../pics/difuntorum.jpg"
+        prod_pic: ["../pics/difuntorum.png"]
     },
     {
         prod_name: "John Paul Tabrilla",
         prod_price: 1000000,
-        prod_pic: "../pics/tabrilla.jpg"
+        prod_pic: ["../pics/tabrilla.png"]
     },
     {
         prod_name: "Eunys Barbon",
         prod_price: 1000000,
-        prod_pic: "../pics/barbon.jpg"
+        prod_pic: ["../pics/barbon.png"]
     },
     {
         prod_name: "Mariah Guisdan",
         prod_price: 1000000,
-        prod_pic: "../pics/guisdan.jpg"
+        prod_pic: ["../pics/guisdan.png"]
     }
 ];
 
@@ -540,7 +541,7 @@ function loadForm() {
 }
 
 function createcard(x) {
-    return "<div class=\"card\"><div class=\"card-img\"><img src=\""+itemList[x-1].prod_pic+"\" alt=\""+itemList[x-1].prod_name+"\"></div><div class=\"card-text\"><div class=\"card-name\">"+itemList[x-1].prod_name+"</div><div class=\"card-price\">₱"+itemList[x-1].prod_price+"</div></div><div class=\"card-button\"><button onclick=\"addOrder("+x+");saveForm()\">Add to Cart</button></div></div>";
+    return "<div class=\"card\"><div class=\"card-img\"><img src=\""+itemList[x-1].prod_pic[Math.floor(Math.random()*itemList[x-1].prod_pic.length)]+"\" alt=\""+itemList[x-1].prod_name+"\" onclick=\"modal("+x+")\"></div><div class=\"card-text\"><div class=\"card-name\">"+itemList[x-1].prod_name+"</div><div class=\"card-price\">₱"+itemList[x-1].prod_price+"</div></div><div class=\"card-button\"><button onclick=\"addOrder("+x+");saveForm()\">Add to Cart</button></div></div>";
 }
 
 function createset(x,y) {
@@ -574,9 +575,6 @@ function createcardset(x) {
     return divset;
 }
 
-var addbool = true;
-var sbool = false;
-
 function search() {
     document.getElementById("searchResult").removeAttribute("hidden");
     document.getElementById("searchResult").innerHTML = "";
@@ -584,9 +582,9 @@ function search() {
         document.getElementById("searchResult").removeAttribute("hidden");
         var v = 0;
         for (var i = 0; i < itemList.length-5; i++) {
-            if (itemList[i].prod_name.toLowerCase().search(document.getElementById( "search-box").value.toLowerCase()) >= 0) {
+            if (itemList[i].prod_name.toLowerCase().search(document.getElementById("search-box").value.toLowerCase().trim()) >= 0) {
                 document.getElementById("searchResult").innerHTML+=
-                "<div class=\"cart-item\" id=\"searchResult-"+v+"\" onclick=\"addOrder("+(i+1)+");sfocus();saveForm();\">"+itemList[i].prod_name+"<span style=\"float:right;\">₱"+itemList[i].prod_price+"</span></div>";
+                "<div class=\"cart-item\" id=\"searchResult-"+v+"\" onclick=\"modal("+(i+1)+");sfocus();saveForm();\">"+itemList[i].prod_name+"<span style=\"float:right;\">₱"+itemList[i].prod_price+"</span></div>";
                 v++;
             }
         }
@@ -647,9 +645,104 @@ function navDisplay(x) {
     }
 }
 
-setTimeout(() => { 
-    document.getElementById("search-box").addEventListener('focus', (event) => {sbool = true;});
-    document.getElementById("search-box").addEventListener('blur', (event) => {sbool = false;});
-    document.getElementById("search-box").addEventListener('keydown', () => {setTimeout(() => { search() }, 1 );}); }, 1);
+function modal(x) {
+    modalitemno = x;
+    document.getElementById('modal-img').setAttribute('src', itemList[x-1].prod_pic[Math.floor(Math.random()*itemList[x-1].prod_pic.length)]);
+    document.getElementById('modal-img').setAttribute('alt', itemList[x-1].prod_name);
+    document.getElementById('item-name').innerHTML = itemList[x-1].prod_name;
+    document.getElementById('item-price').innerHTML = '₱' + itemList[x-1].prod_price;
+    modalAppear(true);
+}
+
+var hide1 = true;
+var hide2 = false;
+
+function hideSearch (x) {
+    hide1 = x;
+    if (hide2 == false) {
+        hide2 = true;
+        if (hide1 == true) {
+            setTimeout(() => { document.getElementById('searchResult').setAttribute('hidden', true);hide2=false; }, 1)
+        } else {
+            setTimeout(() => { document.getElementById('searchResult').removeAttribute('hidden');hide2=false; }, 1)
+        }
+    }
+}
+
+var modal1 = true;
+var modal2 = false;
+
+function modalSearch (x) {
+    modal1 = x;
+    if (modal2 == false) {
+        modal2 = true;
+        if (modal1 == true) {
+            setTimeout(() => { modalAppear(false);modal2=false; }, 1)
+        } else {
+            setTimeout(() => { modalAppear(true);modal2=false; }, 1)
+        }
+    }
+}
+
+function modalAppear(x){
+    if(x==true){
+        if(modal2==false){document.getElementById('number-box').value = ''}
+        hideSearch(true);
+        document.getElementById('modal').style.opacity = '1';
+        document.getElementById('modal').style.top = '0vh';
+    }else{
+        document.getElementById('modal').style.opacity = '0';
+        document.getElementById('modal').style.top = '-100vh';
+    }
+}
+
+function countUp() {
+    if(document.getElementById('number-box').value == ''){document.getElementById('number-box').value = '0'}
+    document.getElementById('number-box').value = Number(document.getElementById('number-box').value) + 1;
+    resizeInput();
+}
+function countDown() {
+    if(document.getElementById('number-box').value == ''){document.getElementById('number-box').value = '0'}
+    document.getElementById('number-box').value = Number(document.getElementById('number-box').value) - 1;
+    resizeInput();
+}
+
+function resizeInput() {
+    document.getElementById('number-box').style.width = document.getElementById('number-box').value.length + 2 + "ch";
+    if(Number(document.getElementById('number-box').value) > 250){document.getElementById('number-box').value = "250"}
+    if(Number(document.getElementById('number-box').value) < 0){document.getElementById('number-box').value = "0"}
+}
+
+function addToCart() {
+    if(Number(document.getElementById('number-box').value) > 0){
+        for(var i = 1; i <= Number(document.getElementById('number-box').value); i++){
+            addOrder(modalitemno);
+        }
+        saveForm();
+    }else{alert('Item Quantity Required')}
+}
+
+function buyNow() {
+    if(document.getElementById('cust_addr').value == '' && document.getElementById('cust_email').value == '' && document.getElementById('cust_name').value == ''){alert('Incomplete information. Please fill up information on cart.');}else{
+        if(Number(document.getElementById('number-box').value) <= 0){alert('Item Quantity Required')}else{
+            var x = [];
+            for(var i = 1; i <= Number(document.getElementById('number-box').value); i++){
+                x[x.length] = itemList[modalitemno-1];
+            }
+            document.getElementById("cust_order").setAttribute("value", JSON.stringify(x));
+            document.getElementById("submit").click();
+        }
+    }
+}
+
+document.addEventListener('keydown', function(event) {
+    switch (event.keyCode){
+        case 27:
+            modalAppear(false);
+            break;
+    }
+});
+
+setTimeout(() => {document.getElementById("search-box").addEventListener('keydown', () => {setTimeout(() => { search() }, 1 );});}, 1);
 
 setTimeout(() => { navDisplay(1); loadForm(); document.getElementById("searchResult").setAttribute("hidden", true) }, 1);

@@ -152,6 +152,11 @@ body{
     font-size: 4vw;
 }
 
+#searchResult>div{
+    width: calc((100vw - 28px));
+    display: block;
+}
+
 #navbar{
     height: 6vw;
 }
@@ -165,4 +170,58 @@ body{
     padding: 3vw;
     padding-bottom: 0px;
     font-size: 8vw;
+}
+
+#modal{
+    padding-bottom:5vh;
+    padding-top:5vh;
+    height: 100vh;
+}
+
+#item-modal{
+    background-color: white;
+    width: 80vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+#item-image{
+    display: block;
+    width: 80vw;
+    height: 80vw;
+}
+
+#item-image>img{
+    width: 100%;
+}
+
+#modal-content{
+    display: block;
+    height: 75%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#item-name{
+    font-size: 6vw;
+}
+
+#item-price{
+    font-size: 4vw;
+}
+
+#add-btn, #minus-btn, #modal-content>button{
+    font-size: 4vw;
+    width: calc(4.5vw + 6px);
+    height: calc(4.5vw + 6px);
+}
+
+#modal-content>button{
+    width:auto;
+    margin-top: 1vw;
+}
+
+#number-box{
+    font-size: 4vw;
+    height: 4.5vw;
 }
