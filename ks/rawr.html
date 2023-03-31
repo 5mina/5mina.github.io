@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: FloralCapitals;
+      src: url(JosefinSans-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: FloralCapitals2;
+      src: url(Oswald-Stencil.ttf);
+    }
+
+    body {
+      font-family: FloralCapitals2;
+      margin: 0px !important;
+      background-image: url(da3dbd84-1c47-baf8-05e0-60ca52d6260a.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      user-select: none;
+    }
+    #div2 {
+      margin: 0px !important;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-size: 10vh;
+    }
+    #timer {
+      font-family: FloralCapitals;
+      margin-top: 35vh;
+      font-size: 25vw;
+    }
+    #textbox {
+      width: 100vw;
+      background-color: white ;
+      position: fixed;
+      top: 100vh;
+      left: 0px;
+      height: 10vh;
+      z-index: 10;
+      transition: top 1s ease;
+    }
+  </style>
+</head>
+<body onclick="timerBool = true; if(timerClicked){timeAdvance()};">
+  <div id="div2">
+    <div id="div1">
+      <div id="timer">20:25</div>
+    </div>
+  </div>
+  <div id="textbox">
+    <form>
+      <input type="text" id="newTime" name="newTime" onclick="changeTime()">
+      <button type="button" onclick="">CHANGE</button>
+    </form>
+  </div>
+  <script>
+    const timer = document.getElementById('timer');
+    const textbox = document.getElementById('textbox');
+    var timerVal = 1225;
+    var timerBool = false;
+    var timerClicked = true;
+
+    function timeVal (x) {
+      x = Math.ceil(x);
+      var sec = x % 60;
+      var min = (x - sec) / 60;
+      if (sec < 10) { sec = "0" + sec }
+      if (min < 10) { min = "0" + min } else
+      if (min > 59) { min = 59 }
+      return min + ":" + sec;
+    }
+
+    function timeAdvance () {
+      console.log("tick");
+      if (timerBool == true) { timerClicked = false; }
+      if ( timerVal > 0 ) { timerVal-- } else { timerStop() };
+      if (timerBool == true) { timer.innerHTML = timeVal(timerVal); }
+      if (timerBool == true) { setTimeout( timeAdvance, 1000 ); } else { timerVal++ }
+    }
+
+    function timerStop() {
+      timerClicked = true;
+      timerBool = false;
+    }
+    
+    /*function changeTime() {
+      var x = document.getElementById('newTime').value.trim();
+      document.getElementById('newTime').setAttribute('value', '');
+      console.log(x);
+      try {x = Number(x) }
+      catch (e) {if(e instanceof ReferenceError) {}}
+      timerVal = x;
+    }
+
+    flipBoxBool = false;
+    function flipBox() {
+      flipBoxBool = flipBoxBool ? false : true;
+      if (flipBoxBool) {document.getElementById("textbox").style.top = '90vh'} else { document.getElementById("textbox").style.top = '100vh' }
+    }
+
+    document.addEventListener('keydown', function (event) {
+        switch (event.keyCode) {
+          case 187:
+            flipBox();
+        }
+      });*/
+  </script>
+</body>
+</html>
